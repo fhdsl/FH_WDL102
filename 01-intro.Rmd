@@ -2,22 +2,16 @@
 ```{r, include = FALSE}
 ottrpal::set_knitr_image_path()
 ```
-
 # Introduction
-
-
-## Motivation
-
+This course is an introduction to designing and testing WDL workflows for beginners.  
 
 ## Target Audience  
 
-The course is intended for ...
 
 ## Curriculum  
 
-The course covers...
-
-
-```{r}
-devtools::session_info()
-```
+This course covers:
+- WDL syntax
+- Tools to support editing WDLs
+- Approaches to testing WDLs
+- Guidance for scaling up your computing including shifting to the cloud

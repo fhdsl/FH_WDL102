@@ -1,0 +1,23 @@
+
+# Testing and Scaling WDL Workflows
+
+
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
+```
+## Approaches for Testing
+- start small - start with truncated/downsampled data in the same formats but smaller!
+- add tasks one at a time and leverage call caching to test single additions quickly
+- start testing scatters with a scatter of one!
+
+
+## Scaling Up, Moving to the Cloud
+- Test with a scatter of many small files (not full size!)
+- Begin optimizing computing resources for each task
+- Dockerize single task environments
+- Test locally on small data scatters of 1 to shift from modules to Dockerize
+- Catch errors and adjust such as tools that rely on filesystems/directory structures which will break in the cloud
+- Learn about the cloud you'll be using
+  - what instance types exist and which are the best for you tasks/data
+  - how do the data need to be stored in an object store?
+  - how can you get permissions set up to access both the data and the compute resources?
