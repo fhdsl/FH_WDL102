@@ -1,5 +1,5 @@
 
-# Designing WDL Workflows
+# Introduction to WDL
 
 
 ```{r, include = FALSE}
@@ -16,3 +16,28 @@ cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "/Docs/Base_structure.md")
 ## Tools for Editing WDLs
 - VSCode has an extension
 - ways to plot a DAG? 
+
+
+## Workflow Structure
+
+
+### Inputs
+
+
+### Tasks
+
+
+#### Inputs
+
+#### Command
+
+#### Outputs
+
+#### Runtime
+
+
+### Managing Software Environments
+
+
+## Wiring Tasks Together
+
