@@ -9,8 +9,9 @@ ottrpal::set_knitr_image_path()
 
 
 ## WDL syntax
-
+```{r, include = FALSE}
 cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "/Docs/Base_structure.md")
+```
 
 ## Tools for Editing WDLs
 - VSCode has an extension
