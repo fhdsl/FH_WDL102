@@ -10,7 +10,7 @@ ottrpal::set_knitr_image_path()
 
 ## WDL syntax
 ```{r, include = FALSE}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/Base_structure.md")
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/Base_structure.md", branch = "1.0")
 ```
 
 ## Tools for Editing WDLs
