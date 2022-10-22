@@ -6,10 +6,16 @@
 ottrpal::set_knitr_image_path()
 ```
 
+There is ongoing work on WDL the specification, thus it has multiple versions.  Currently there are three versions to note:
+- draft-2 - this version was the version that much of the Broad's public facing documentation and example workflows were written in. 
+- 1.0 - this is a more recent version that is the most up to date version of the specification that Cromwell can interpret.  We use WDL 1.0 at the Hutch.
+- 1.1 - this is an even more recent version that not all WDL engines support yet. 
 
+We'll be using WDL 1.0 in this course but you can always check out the [openwdl repo](https://github.com/openwdl/wdl) for more information about tweaking these instructions for different versions of WDL.  
 
-## WDL syntax
-```{r, include = FALSE}
+## WDL 1.0 Syntax
+
+```{r, include = TRUE}
 cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/Base_structure.md", branch = "1.0")
 ```
 
