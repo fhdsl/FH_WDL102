@@ -26,6 +26,27 @@ We'll be using WDL 1.0 in this course but you can always check out the [openwdl 
 ```{r, echo = FALSE, results = "asis"}
 cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/Base_structure.md", branch = "1.0")
 ```
+```{r, echo = FALSE, results = "asis"}
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/add_variables.md", branch = "1.0")
+```
+
+
+```{r, echo = FALSE, results = "asis"}
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/add_plumbing.md", branch = "1.0")
+```
+
+```{r, echo = FALSE, results = "asis"}
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/Linear_chaining.md", branch = "1.0")
+```
+
+
+```{r, echo = FALSE, results = "asis"}
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/ScatterGather_parallelism.md", branch = "1.0")
+```
+
+
+
+
 
 ## Tools for Editing WDLs
 - VSCode has an extension
