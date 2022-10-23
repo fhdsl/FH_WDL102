@@ -23,7 +23,7 @@ We'll be using WDL 1.0 in this course but you can always check out the [openwdl 
 
 ## WDL 1.0 Syntax
 
-```{r}
+```{r, echo = FALSE, results = "asis"}
 cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/Base_structure.md", branch = "1.0")
 ```
 
