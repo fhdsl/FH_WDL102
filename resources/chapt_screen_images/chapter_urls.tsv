@@ -1,0 +1,17 @@
+url	chapt_title	img_path
+https://hutchdatascience.org/FH_WDL102_Workflows/no_toc/index.html	About this Book	resources/chapt_screen_images/index.png
+https://hutchdatascience.org/FH_WDL102_Workflows/no_toc/introduction.html	1 Introduction	resources/chapt_screen_images/introduction.png
+https://hutchdatascience.org/FH_WDL102_Workflows/no_toc/introduction-to-wdl.html	2 Introduction to WDL	resources/chapt_screen_images/introduction-to-wdl.png
+https://hutchdatascience.org/FH_WDL102_Workflows/no_toc/base-structure.html	3 Base structure	resources/chapt_screen_images/base-structure.png
+https://hutchdatascience.org/FH_WDL102_Workflows/no_toc/workflow-1.html	4 Workflow	resources/chapt_screen_images/workflow-1.png
+https://hutchdatascience.org/FH_WDL102_Workflows/no_toc/specify-inputs.html	5 Specify inputs	resources/chapt_screen_images/specify-inputs.png
+https://hutchdatascience.org/FH_WDL102_Workflows/no_toc/call-1.html	6 Call	resources/chapt_screen_images/call-1.png
+https://hutchdatascience.org/FH_WDL102_Workflows/no_toc/task-1.html	7 Task	resources/chapt_screen_images/task-1.png
+https://hutchdatascience.org/FH_WDL102_Workflows/no_toc/task-aliasing.html	8 Task aliasing	resources/chapt_screen_images/task-aliasing.png
+https://hutchdatascience.org/FH_WDL102_Workflows/no_toc/add-variables.html	9 Add variables	resources/chapt_screen_images/add-variables.png
+https://hutchdatascience.org/FH_WDL102_Workflows/no_toc/add-plumbing.html	10 Add plumbing	resources/chapt_screen_images/add-plumbing.png
+https://hutchdatascience.org/FH_WDL102_Workflows/no_toc/linear-chaining-1.html	11 Linear chaining	resources/chapt_screen_images/linear-chaining-1.png
+https://hutchdatascience.org/FH_WDL102_Workflows/no_toc/scatter-gather-parallelism-1.html	12 Scatter-gather parallelism	resources/chapt_screen_images/scatter-gather-parallelism-1.png
+https://hutchdatascience.org/FH_WDL102_Workflows/no_toc/developing-testing-and-scaling-workflows.html	13 Developing, Testing and Scaling Workflows	resources/chapt_screen_images/developing-testing-and-scaling-workflows.png
+https://hutchdatascience.org/FH_WDL102_Workflows/no_toc/about-the-authors.html	About the Authors	resources/chapt_screen_images/about-the-authors.png
+https://hutchdatascience.org/FH_WDL102_Workflows/no_toc/references.html	14 References	resources/chapt_screen_images/references.png
