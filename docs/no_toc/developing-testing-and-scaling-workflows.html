@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 References | WDL102: Designing Workflows</title>
+  <title>Chapter 3 Developing, Testing and Scaling Workflows | WDL102: Designing Workflows</title>
   <meta name="description" content="A getting started guide to creating and testing WDL workflows" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 4 References | WDL102: Designing Workflows" />
+  <meta property="og:title" content="Chapter 3 Developing, Testing and Scaling Workflows | WDL102: Designing Workflows" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 References | WDL102: Designing Workflows" />
+  <meta name="twitter:title" content="Chapter 3 Developing, Testing and Scaling Workflows | WDL102: Designing Workflows" />
   
   <meta name="twitter:description" content="A getting started guide to creating and testing WDL workflows" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="about-the-authors.html"/>
-
+<link rel="prev" href="introduction-to-wdl.html"/>
+<link rel="next" href="about-the-authors.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -251,9 +251,56 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="references" class="section level1" number="4">
-<h1><span class="header-section-number">Chapter 4</span> References</h1>
+<div id="developing-testing-and-scaling-workflows" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Developing, Testing and Scaling Workflows</h1>
+<div id="developing-a-new-workflow" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Developing a New Workflow</h2>
+<div id="start-from-a-template" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Start from a template</h3>
+<p>Preferably one that executes cleanly - even if it’s Hello World.</p>
+</div>
+<div id="chose-software-modules" class="section level3" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Chose Software Modules</h3>
+<p>Test interactively with software modules on the cluster to see what inputs are required, what parameters you want to specify, what outputs get created.</p>
+</div>
+<div id="add-tasks" class="section level3" number="3.1.3">
+<h3><span class="header-section-number">3.1.3</span> Add Tasks</h3>
+<p>Define tasks, using modules, test data (truncated files, scatters of 1), run and test.</p>
+</div>
+<div id="scale-up-inputs" class="section level3" number="3.1.4">
+<h3><span class="header-section-number">3.1.4</span> Scale Up Inputs</h3>
+<p>Start to run workflow on full size data (scatters of 1), then start to scatter over several files, then scatter over entire datasets.</p>
+</div>
+<div id="prep-for-other-platforms-and-sharing" class="section level3" number="3.1.5">
+<h3><span class="header-section-number">3.1.5</span> Prep for Other Platforms and Sharing</h3>
+<p>Shift to docker containers instead of modules, ensure that all inputs are specified as files not directories!!, start to optmize compute resources required for tasks (how much memory does it really need, or is it going to need many CPU’s).</p>
+</div>
+</div>
+<div id="approaches-for-testing" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Approaches for Testing</h2>
+<ul>
+<li>start small - start with truncated/downsampled data in the same formats but smaller!</li>
+<li>add tasks one at a time and leverage call caching to test single additions quickly</li>
+<li>start testing scatters with a scatter of one!</li>
+</ul>
+</div>
+<div id="scaling-up-moving-to-the-cloud" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Scaling Up, Moving to the Cloud</h2>
+<ul>
+<li>Test with a scatter of many small files (not full size!)</li>
+<li>Begin optimizing computing resources for each task</li>
+<li>Dockerize single task environments</li>
+<li>Test locally on small data scatters of 1 to shift from modules to Dockerize</li>
+<li>Catch errors and adjust such as tools that rely on filesystems/directory structures which will break in the cloud</li>
+<li>Learn about the cloud you’ll be using
+<ul>
+<li>what instance types exist and which are the best for you tasks/data</li>
+<li>how do the data need to be stored in an object store?</li>
+<li>how can you get permissions set up to access both the data and the compute resources?</li>
+</ul></li>
+</ul>
 
+</div>
 </div>
 <hr>
 <center> 
@@ -268,8 +315,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="about-the-authors.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="introduction-to-wdl.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="about-the-authors.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
