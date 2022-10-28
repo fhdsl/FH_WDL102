@@ -1,10 +1,11 @@
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
+```
 
 # Developing, Testing and Scaling Workflows
 
 
-```{r, include = FALSE}
-ottrpal::set_knitr_image_path()
-```
+
 
 ## Developing a New Workflow
 

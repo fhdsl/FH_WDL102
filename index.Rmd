@@ -1,21 +1,18 @@
 ---
-title: "WDL102: Workflows"
+title: "WDL102: Designing Workflows"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
 biblio-style: apalike
 link-citations: yes
-description: A getting started guide to WDL workflows
+description: A getting started guide to creating and testing WDL workflows
 favicon: assets/favicon.ico
 ---
 
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), "bookdown", "knitr", "rmarkdown"
-), "packages.bib")
-```
-
 # About this Book {-}
+
+
+
+<img src="assets/course-logo/wdl-102-navy.png" title="WDL 102 course logo" alt="course logo" style="display: block; margin: auto;" />
 
