@@ -34,7 +34,7 @@ cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/workflow.md", branch =
 
 ### Inputs
 ```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/specify-inputs.md", branch = "1.0")
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/specify_inputs.md", branch = "1.0")
 ```
 
 ### Calls
@@ -54,7 +54,7 @@ cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/task.md", branch = "1.
 
 Task aliasing.
 ```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/task-aliasing.md", branch = "1.0")
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/task_aliasing.md", branch = "1.0")
 ```
 
 
