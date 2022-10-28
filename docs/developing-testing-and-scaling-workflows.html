@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 13 Developing, Testing and Scaling Workflows | WDL102: Designing Workflows</title>
+  <title>Chapter 3 Developing, Testing and Scaling Workflows | WDL102: Designing Workflows</title>
   <meta name="description" content="A getting started guide to creating and testing WDL workflows" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 13 Developing, Testing and Scaling Workflows | WDL102: Designing Workflows" />
+  <meta property="og:title" content="Chapter 3 Developing, Testing and Scaling Workflows | WDL102: Designing Workflows" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 13 Developing, Testing and Scaling Workflows | WDL102: Designing Workflows" />
+  <meta name="twitter:title" content="Chapter 3 Developing, Testing and Scaling Workflows | WDL102: Designing Workflows" />
   
   <meta name="twitter:description" content="A getting started guide to creating and testing WDL workflows" />
   
@@ -30,7 +30,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="scatter-gather-parallelism-1.html"/>
+<link rel="prev" href="introduction-to-wdl.html"/>
 <link rel="next" href="about-the-authors.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -141,113 +141,83 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="2.1" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#openwdl"><i class="fa fa-check"></i><b>2.1</b> openWDL</a></li>
 <li class="chapter" data-level="2.2" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#wdl-1.0-syntax"><i class="fa fa-check"></i><b>2.2</b> WDL 1.0 Syntax</a></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="base-structure.html"><a href="base-structure.html"><i class="fa fa-check"></i><b>3</b> Base structure</a>
+<li class="chapter" data-level="2.3" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#top-level-components-workflow-call-and-task"><i class="fa fa-check"></i><b>2.3</b> Top-level components: workflow, call and task</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="base-structure.html"><a href="base-structure.html#top-level-components-workflow-call-and-task"><i class="fa fa-check"></i><b>3.1</b> Top-level components: workflow, call and task</a>
-<ul>
-<li class="chapter" data-level="3.1.1" data-path="base-structure.html"><a href="base-structure.html#call"><i class="fa fa-check"></i><b>3.1.1</b> call</a></li>
-<li class="chapter" data-level="3.1.2" data-path="base-structure.html"><a href="base-structure.html#task"><i class="fa fa-check"></i><b>3.1.2</b> task</a></li>
-<li class="chapter" data-level="3.1.3" data-path="base-structure.html"><a href="base-structure.html#workflow"><i class="fa fa-check"></i><b>3.1.3</b> workflow</a></li>
+<li class="chapter" data-level="2.3.1" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#call"><i class="fa fa-check"></i><b>2.3.1</b> call</a></li>
+<li class="chapter" data-level="2.3.2" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#task"><i class="fa fa-check"></i><b>2.3.2</b> task</a></li>
+<li class="chapter" data-level="2.3.3" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#workflow"><i class="fa fa-check"></i><b>2.3.3</b> workflow</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="base-structure.html"><a href="base-structure.html#core-task-level-components-command-and-output"><i class="fa fa-check"></i><b>3.2</b> Core task-level components: command and output</a>
+<li class="chapter" data-level="2.4" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#core-task-level-components-command-and-output"><i class="fa fa-check"></i><b>2.4</b> Core task-level components: command and output</a>
 <ul>
-<li class="chapter" data-level="3.2.1" data-path="base-structure.html"><a href="base-structure.html#command"><i class="fa fa-check"></i><b>3.2.1</b> command</a></li>
-<li class="chapter" data-level="3.2.2" data-path="base-structure.html"><a href="base-structure.html#output"><i class="fa fa-check"></i><b>3.2.2</b> output</a></li>
+<li class="chapter" data-level="2.4.1" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#command"><i class="fa fa-check"></i><b>2.4.1</b> command</a></li>
+<li class="chapter" data-level="2.4.2" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#output"><i class="fa fa-check"></i><b>2.4.2</b> output</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="base-structure.html"><a href="base-structure.html#workflow-structure"><i class="fa fa-check"></i><b>3.3</b> Workflow Structure</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="workflow-1.html"><a href="workflow-1.html"><i class="fa fa-check"></i><b>4</b> Workflow</a>
+<li class="chapter" data-level="2.5" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#workflow-structure"><i class="fa fa-check"></i><b>2.5</b> Workflow Structure</a></li>
+<li class="chapter" data-level="2.6" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#example-4"><i class="fa fa-check"></i><b>2.6</b> Example:</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="workflow-1.html"><a href="workflow-1.html#example-4"><i class="fa fa-check"></i><b>4.1</b> Example:</a>
-<ul>
-<li class="chapter" data-level="4.1.1" data-path="workflow-1.html"><a href="workflow-1.html#inputs"><i class="fa fa-check"></i><b>4.1.1</b> Inputs</a></li>
+<li class="chapter" data-level="2.6.1" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#inputs"><i class="fa fa-check"></i><b>2.6.1</b> Inputs</a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="specify-inputs.html"><a href="specify-inputs.html"><i class="fa fa-check"></i><b>5</b> Specify inputs</a>
+<li class="chapter" data-level="2.7" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#generating-the-template-json"><i class="fa fa-check"></i><b>2.7</b> Generating the template JSON</a></li>
+<li class="chapter" data-level="2.8" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#customizing-the-inputs-file-for-a-particular-run"><i class="fa fa-check"></i><b>2.8</b> Customizing the inputs file for a particular run</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="specify-inputs.html"><a href="specify-inputs.html#generating-the-template-json"><i class="fa fa-check"></i><b>5.1</b> Generating the template JSON</a></li>
-<li class="chapter" data-level="5.2" data-path="specify-inputs.html"><a href="specify-inputs.html#customizing-the-inputs-file-for-a-particular-run"><i class="fa fa-check"></i><b>5.2</b> Customizing the inputs file for a particular run</a>
-<ul>
-<li class="chapter" data-level="5.2.1" data-path="specify-inputs.html"><a href="specify-inputs.html#example-5"><i class="fa fa-check"></i><b>5.2.1</b> Example</a></li>
-<li class="chapter" data-level="5.2.2" data-path="specify-inputs.html"><a href="specify-inputs.html#calls"><i class="fa fa-check"></i><b>5.2.2</b> Calls</a></li>
+<li class="chapter" data-level="2.8.1" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#example-5"><i class="fa fa-check"></i><b>2.8.1</b> Example</a></li>
+<li class="chapter" data-level="2.8.2" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#calls"><i class="fa fa-check"></i><b>2.8.2</b> Calls</a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="call-1.html"><a href="call-1.html"><i class="fa fa-check"></i><b>6</b> Call</a>
+<li class="chapter" data-level="2.9" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#examples-1"><i class="fa fa-check"></i><b>2.9</b> Examples:</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="call-1.html"><a href="call-1.html#examples-1"><i class="fa fa-check"></i><b>6.1</b> Examples:</a>
-<ul>
-<li class="chapter" data-level="6.1.1" data-path="call-1.html"><a href="call-1.html#outputs"><i class="fa fa-check"></i><b>6.1.1</b> Outputs</a></li>
-<li class="chapter" data-level="6.1.2" data-path="call-1.html"><a href="call-1.html#tasks"><i class="fa fa-check"></i><b>6.1.2</b> Tasks</a></li>
+<li class="chapter" data-level="2.9.1" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#outputs"><i class="fa fa-check"></i><b>2.9.1</b> Outputs</a></li>
+<li class="chapter" data-level="2.9.2" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#tasks"><i class="fa fa-check"></i><b>2.9.2</b> Tasks</a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="7" data-path="task-1.html"><a href="task-1.html"><i class="fa fa-check"></i><b>7</b> Task</a>
+<li class="chapter" data-level="2.10" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#example-6"><i class="fa fa-check"></i><b>2.10</b> Example:</a></li>
+<li class="chapter" data-level="2.11" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#generic-example-script"><i class="fa fa-check"></i><b>2.11</b> Generic example script</a></li>
+<li class="chapter" data-level="2.12" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#concrete-example"><i class="fa fa-check"></i><b>2.12</b> Concrete example</a></li>
+<li class="chapter" data-level="2.13" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#concrete-example-script"><i class="fa fa-check"></i><b>2.13</b> Concrete example script</a></li>
+<li class="chapter" data-level="2.14" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#wiring-tasks-together"><i class="fa fa-check"></i><b>2.14</b> Wiring Tasks Together</a></li>
+<li class="chapter" data-level="2.15" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#adding-task-level-variables"><i class="fa fa-check"></i><b>2.15</b> Adding task-level variables</a></li>
+<li class="chapter" data-level="2.16" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#adding-workflow-level-variables"><i class="fa fa-check"></i><b>2.16</b> Adding workflow-level variables</a></li>
+<li class="chapter" data-level="2.17" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#what-is-plumbing"><i class="fa fa-check"></i><b>2.17</b> What is plumbing?</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="task-1.html"><a href="task-1.html#example-6"><i class="fa fa-check"></i><b>7.1</b> Example:</a></li>
+<li class="chapter" data-level="2.17.1" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#simple-connections"><i class="fa fa-check"></i><b>2.17.1</b> Simple connections</a></li>
+<li class="chapter" data-level="2.17.2" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#switching-and-iterating-logic"><i class="fa fa-check"></i><b>2.17.2</b> Switching and iterating logic</a></li>
+<li class="chapter" data-level="2.17.3" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#efficiency-through-code-re-use"><i class="fa fa-check"></i><b>2.17.3</b> Efficiency through code re-use</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="task-aliasing.html"><a href="task-aliasing.html"><i class="fa fa-check"></i><b>8</b> Task aliasing</a>
+<li class="chapter" data-level="2.18" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#plumbing-options"><i class="fa fa-check"></i><b>2.18</b> Plumbing options</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="task-aliasing.html"><a href="task-aliasing.html#generic-example-script"><i class="fa fa-check"></i><b>8.1</b> Generic example script</a></li>
-<li class="chapter" data-level="8.2" data-path="task-aliasing.html"><a href="task-aliasing.html#concrete-example"><i class="fa fa-check"></i><b>8.2</b> Concrete example</a></li>
-<li class="chapter" data-level="8.3" data-path="task-aliasing.html"><a href="task-aliasing.html#concrete-example-script"><i class="fa fa-check"></i><b>8.3</b> Concrete example script</a></li>
-<li class="chapter" data-level="8.4" data-path="task-aliasing.html"><a href="task-aliasing.html#wiring-tasks-together"><i class="fa fa-check"></i><b>8.4</b> Wiring Tasks Together</a></li>
+<li class="chapter" data-level="2.18.1" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#linear-chaining"><i class="fa fa-check"></i><b>2.18.1</b> Linear Chaining</a></li>
+<li class="chapter" data-level="2.18.2" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#multi-input-multi-output"><i class="fa fa-check"></i><b>2.18.2</b> Multi-input / Multi-output</a></li>
+<li class="chapter" data-level="2.18.3" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#branch-and-merge"><i class="fa fa-check"></i><b>2.18.3</b> Branch and Merge</a></li>
+<li class="chapter" data-level="2.18.4" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#conditionals-ifelse"><i class="fa fa-check"></i><b>2.18.4</b> Conditionals (if/else)</a></li>
+<li class="chapter" data-level="2.18.5" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#scatter-gather-parallelism"><i class="fa fa-check"></i><b>2.18.5</b> Scatter-Gather Parallelism</a></li>
+<li class="chapter" data-level="2.18.6" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#task-aliasing"><i class="fa fa-check"></i><b>2.18.6</b> Task Aliasing</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="add-variables.html"><a href="add-variables.html"><i class="fa fa-check"></i><b>9</b> Add variables</a>
+<li class="chapter" data-level="2.19" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#generic-example-script-1"><i class="fa fa-check"></i><b>2.19</b> Generic example script</a></li>
+<li class="chapter" data-level="2.20" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#concrete-example-1"><i class="fa fa-check"></i><b>2.20</b> Concrete example</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="add-variables.html"><a href="add-variables.html#adding-task-level-variables"><i class="fa fa-check"></i><b>9.1</b> Adding task-level variables</a></li>
-<li class="chapter" data-level="9.2" data-path="add-variables.html"><a href="add-variables.html#adding-workflow-level-variables"><i class="fa fa-check"></i><b>9.2</b> Adding workflow-level variables</a></li>
+<li class="chapter" data-level="2.20.1" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#concrete-example-script-1"><i class="fa fa-check"></i><b>2.20.1</b> Concrete example script</a></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="add-plumbing.html"><a href="add-plumbing.html"><i class="fa fa-check"></i><b>10</b> Add plumbing</a>
+<li class="chapter" data-level="2.21" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#generic-example-script-2"><i class="fa fa-check"></i><b>2.21</b> Generic example script</a></li>
+<li class="chapter" data-level="2.22" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#concrete-example-2"><i class="fa fa-check"></i><b>2.22</b> Concrete example</a>
 <ul>
-<li class="chapter" data-level="10.1" data-path="add-plumbing.html"><a href="add-plumbing.html#what-is-plumbing"><i class="fa fa-check"></i><b>10.1</b> What is plumbing?</a>
-<ul>
-<li class="chapter" data-level="10.1.1" data-path="add-plumbing.html"><a href="add-plumbing.html#simple-connections"><i class="fa fa-check"></i><b>10.1.1</b> Simple connections</a></li>
-<li class="chapter" data-level="10.1.2" data-path="add-plumbing.html"><a href="add-plumbing.html#switching-and-iterating-logic"><i class="fa fa-check"></i><b>10.1.2</b> Switching and iterating logic</a></li>
-<li class="chapter" data-level="10.1.3" data-path="add-plumbing.html"><a href="add-plumbing.html#efficiency-through-code-re-use"><i class="fa fa-check"></i><b>10.1.3</b> Efficiency through code re-use</a></li>
+<li class="chapter" data-level="2.22.1" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#concrete-example-script-2"><i class="fa fa-check"></i><b>2.22.1</b> Concrete example script</a></li>
+<li class="chapter" data-level="2.22.2" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#managing-software-environments"><i class="fa fa-check"></i><b>2.22.2</b> Managing Software Environments</a></li>
 </ul></li>
-<li class="chapter" data-level="10.2" data-path="add-plumbing.html"><a href="add-plumbing.html#plumbing-options"><i class="fa fa-check"></i><b>10.2</b> Plumbing options</a>
-<ul>
-<li class="chapter" data-level="10.2.1" data-path="add-plumbing.html"><a href="add-plumbing.html#linear-chaining"><i class="fa fa-check"></i><b>10.2.1</b> Linear Chaining</a></li>
-<li class="chapter" data-level="10.2.2" data-path="add-plumbing.html"><a href="add-plumbing.html#multi-input-multi-output"><i class="fa fa-check"></i><b>10.2.2</b> Multi-input / Multi-output</a></li>
-<li class="chapter" data-level="10.2.3" data-path="add-plumbing.html"><a href="add-plumbing.html#branch-and-merge"><i class="fa fa-check"></i><b>10.2.3</b> Branch and Merge</a></li>
-<li class="chapter" data-level="10.2.4" data-path="add-plumbing.html"><a href="add-plumbing.html#conditionals-ifelse"><i class="fa fa-check"></i><b>10.2.4</b> Conditionals (if/else)</a></li>
-<li class="chapter" data-level="10.2.5" data-path="add-plumbing.html"><a href="add-plumbing.html#scatter-gather-parallelism"><i class="fa fa-check"></i><b>10.2.5</b> Scatter-Gather Parallelism</a></li>
-<li class="chapter" data-level="10.2.6" data-path="add-plumbing.html"><a href="add-plumbing.html#task-aliasing-1"><i class="fa fa-check"></i><b>10.2.6</b> Task Aliasing</a></li>
+<li class="chapter" data-level="2.23" data-path="introduction-to-wdl.html"><a href="introduction-to-wdl.html#tools-for-editing-wdls"><i class="fa fa-check"></i><b>2.23</b> Tools for Editing WDLs</a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="11" data-path="linear-chaining-1.html"><a href="linear-chaining-1.html"><i class="fa fa-check"></i><b>11</b> Linear chaining</a>
+<li class="chapter" data-level="3" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html"><i class="fa fa-check"></i><b>3</b> Developing, Testing and Scaling Workflows</a>
 <ul>
-<li class="chapter" data-level="11.1" data-path="linear-chaining-1.html"><a href="linear-chaining-1.html#generic-example-script-1"><i class="fa fa-check"></i><b>11.1</b> Generic example script</a></li>
-<li class="chapter" data-level="11.2" data-path="linear-chaining-1.html"><a href="linear-chaining-1.html#concrete-example-1"><i class="fa fa-check"></i><b>11.2</b> Concrete example</a>
+<li class="chapter" data-level="3.1" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#developing-a-new-workflow"><i class="fa fa-check"></i><b>3.1</b> Developing a New Workflow</a>
 <ul>
-<li class="chapter" data-level="11.2.1" data-path="linear-chaining-1.html"><a href="linear-chaining-1.html#concrete-example-script-1"><i class="fa fa-check"></i><b>11.2.1</b> Concrete example script</a></li>
+<li class="chapter" data-level="3.1.1" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#start-from-a-template"><i class="fa fa-check"></i><b>3.1.1</b> Start from a template</a></li>
+<li class="chapter" data-level="3.1.2" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#chose-software-modules"><i class="fa fa-check"></i><b>3.1.2</b> Chose Software Modules</a></li>
+<li class="chapter" data-level="3.1.3" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#add-tasks"><i class="fa fa-check"></i><b>3.1.3</b> Add Tasks</a></li>
+<li class="chapter" data-level="3.1.4" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#scale-up-inputs"><i class="fa fa-check"></i><b>3.1.4</b> Scale Up Inputs</a></li>
+<li class="chapter" data-level="3.1.5" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#prep-for-other-platforms-and-sharing"><i class="fa fa-check"></i><b>3.1.5</b> Prep for Other Platforms and Sharing</a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="12" data-path="scatter-gather-parallelism-1.html"><a href="scatter-gather-parallelism-1.html"><i class="fa fa-check"></i><b>12</b> Scatter-gather parallelism</a>
-<ul>
-<li class="chapter" data-level="12.1" data-path="scatter-gather-parallelism-1.html"><a href="scatter-gather-parallelism-1.html#generic-example-script-2"><i class="fa fa-check"></i><b>12.1</b> Generic example script</a></li>
-<li class="chapter" data-level="12.2" data-path="scatter-gather-parallelism-1.html"><a href="scatter-gather-parallelism-1.html#concrete-example-2"><i class="fa fa-check"></i><b>12.2</b> Concrete example</a>
-<ul>
-<li class="chapter" data-level="12.2.1" data-path="scatter-gather-parallelism-1.html"><a href="scatter-gather-parallelism-1.html#concrete-example-script-2"><i class="fa fa-check"></i><b>12.2.1</b> Concrete example script</a></li>
-<li class="chapter" data-level="12.2.2" data-path="scatter-gather-parallelism-1.html"><a href="scatter-gather-parallelism-1.html#managing-software-environments"><i class="fa fa-check"></i><b>12.2.2</b> Managing Software Environments</a></li>
-</ul></li>
-<li class="chapter" data-level="12.3" data-path="scatter-gather-parallelism-1.html"><a href="scatter-gather-parallelism-1.html#tools-for-editing-wdls"><i class="fa fa-check"></i><b>12.3</b> Tools for Editing WDLs</a></li>
-</ul></li>
-<li class="chapter" data-level="13" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html"><i class="fa fa-check"></i><b>13</b> Developing, Testing and Scaling Workflows</a>
-<ul>
-<li class="chapter" data-level="13.1" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#developing-a-new-workflow"><i class="fa fa-check"></i><b>13.1</b> Developing a New Workflow</a>
-<ul>
-<li class="chapter" data-level="13.1.1" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#start-from-a-template"><i class="fa fa-check"></i><b>13.1.1</b> Start from a template</a></li>
-<li class="chapter" data-level="13.1.2" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#chose-software-modules"><i class="fa fa-check"></i><b>13.1.2</b> Chose Software Modules</a></li>
-<li class="chapter" data-level="13.1.3" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#add-tasks"><i class="fa fa-check"></i><b>13.1.3</b> Add Tasks</a></li>
-<li class="chapter" data-level="13.1.4" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#scale-up-inputs"><i class="fa fa-check"></i><b>13.1.4</b> Scale Up Inputs</a></li>
-<li class="chapter" data-level="13.1.5" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#prep-for-other-platforms-and-sharing"><i class="fa fa-check"></i><b>13.1.5</b> Prep for Other Platforms and Sharing</a></li>
-</ul></li>
-<li class="chapter" data-level="13.2" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#approaches-for-testing"><i class="fa fa-check"></i><b>13.2</b> Approaches for Testing</a></li>
-<li class="chapter" data-level="13.3" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#scaling-up-moving-to-the-cloud"><i class="fa fa-check"></i><b>13.3</b> Scaling Up, Moving to the Cloud</a></li>
+<li class="chapter" data-level="3.2" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#approaches-for-testing"><i class="fa fa-check"></i><b>3.2</b> Approaches for Testing</a></li>
+<li class="chapter" data-level="3.3" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#scaling-up-moving-to-the-cloud"><i class="fa fa-check"></i><b>3.3</b> Scaling Up, Moving to the Cloud</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
-<li class="chapter" data-level="14" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>14</b> References</a></li>
+<li class="chapter" data-level="4" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>4</b> References</a></li>
 <li class="divider"></li>
 <p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
 <p style="text-align:center;"> <a href="http://hutchdatascience.org/"> The Fred Hutch Data Science Lab </a></p>
@@ -281,41 +251,41 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="developing-testing-and-scaling-workflows" class="section level1" number="13">
-<h1><span class="header-section-number">Chapter 13</span> Developing, Testing and Scaling Workflows</h1>
-<div id="developing-a-new-workflow" class="section level2" number="13.1">
-<h2><span class="header-section-number">13.1</span> Developing a New Workflow</h2>
-<div id="start-from-a-template" class="section level3" number="13.1.1">
-<h3><span class="header-section-number">13.1.1</span> Start from a template</h3>
+<div id="developing-testing-and-scaling-workflows" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Developing, Testing and Scaling Workflows</h1>
+<div id="developing-a-new-workflow" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Developing a New Workflow</h2>
+<div id="start-from-a-template" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Start from a template</h3>
 <p>Preferably one that executes cleanly - even if it’s Hello World.</p>
 </div>
-<div id="chose-software-modules" class="section level3" number="13.1.2">
-<h3><span class="header-section-number">13.1.2</span> Chose Software Modules</h3>
+<div id="chose-software-modules" class="section level3" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Chose Software Modules</h3>
 <p>Test interactively with software modules on the cluster to see what inputs are required, what parameters you want to specify, what outputs get created.</p>
 </div>
-<div id="add-tasks" class="section level3" number="13.1.3">
-<h3><span class="header-section-number">13.1.3</span> Add Tasks</h3>
+<div id="add-tasks" class="section level3" number="3.1.3">
+<h3><span class="header-section-number">3.1.3</span> Add Tasks</h3>
 <p>Define tasks, using modules, test data (truncated files, scatters of 1), run and test.</p>
 </div>
-<div id="scale-up-inputs" class="section level3" number="13.1.4">
-<h3><span class="header-section-number">13.1.4</span> Scale Up Inputs</h3>
+<div id="scale-up-inputs" class="section level3" number="3.1.4">
+<h3><span class="header-section-number">3.1.4</span> Scale Up Inputs</h3>
 <p>Start to run workflow on full size data (scatters of 1), then start to scatter over several files, then scatter over entire datasets.</p>
 </div>
-<div id="prep-for-other-platforms-and-sharing" class="section level3" number="13.1.5">
-<h3><span class="header-section-number">13.1.5</span> Prep for Other Platforms and Sharing</h3>
+<div id="prep-for-other-platforms-and-sharing" class="section level3" number="3.1.5">
+<h3><span class="header-section-number">3.1.5</span> Prep for Other Platforms and Sharing</h3>
 <p>Shift to docker containers instead of modules, ensure that all inputs are specified as files not directories!!, start to optmize compute resources required for tasks (how much memory does it really need, or is it going to need many CPU’s).</p>
 </div>
 </div>
-<div id="approaches-for-testing" class="section level2" number="13.2">
-<h2><span class="header-section-number">13.2</span> Approaches for Testing</h2>
+<div id="approaches-for-testing" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Approaches for Testing</h2>
 <ul>
 <li>start small - start with truncated/downsampled data in the same formats but smaller!</li>
 <li>add tasks one at a time and leverage call caching to test single additions quickly</li>
 <li>start testing scatters with a scatter of one!</li>
 </ul>
 </div>
-<div id="scaling-up-moving-to-the-cloud" class="section level2" number="13.3">
-<h2><span class="header-section-number">13.3</span> Scaling Up, Moving to the Cloud</h2>
+<div id="scaling-up-moving-to-the-cloud" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Scaling Up, Moving to the Cloud</h2>
 <ul>
 <li>Test with a scatter of many small files (not full size!)</li>
 <li>Begin optimizing computing resources for each task</li>
@@ -345,7 +315,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="scatter-gather-parallelism-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="introduction-to-wdl.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="about-the-authors.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
