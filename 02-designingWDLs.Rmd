@@ -24,22 +24,22 @@ We'll be using WDL 1.0 in this course but you can always check out the [openwdl 
 ## WDL 1.0 Syntax
 
 ```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/Base_structure.md", branch = "1.0")
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/Base_structure.md", branch = "1.0", remove_h1 = TRUE)
 ```
 
 ## Workflow Structure
 ```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/workflow.md", branch = "1.0")
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/workflow.md", branch = "1.0", remove_h1 = TRUE)
 ```
 
 ### Inputs
 ```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/specify_inputs.md", branch = "1.0")
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/specify_inputs.md", branch = "1.0", remove_h1 = TRUE)
 ```
 
 ### Calls
 ```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/call.md", branch = "1.0")
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/call.md", branch = "1.0", remove_h1 = TRUE)
 ```
 
 ### Outputs
@@ -49,12 +49,12 @@ Outputs to the workflow itself.
 
 ### Tasks
 ```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/task.md", branch = "1.0")
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/task.md", branch = "1.0", remove_h1 = TRUE)
 ```
 
 Task aliasing.
 ```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/task_aliasing.md", branch = "1.0")
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/task_aliasing.md", branch = "1.0", remove_h1 = TRUE)
 ```
 
 
@@ -62,21 +62,21 @@ cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/task_aliasing.md", bra
 
 
 ```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/add_variables.md", branch = "1.0")
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/add_variables.md", branch = "1.0", remove_h1 = TRUE)
 ```
 
 
 ```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/add_plumbing.md", branch = "1.0")
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/add_plumbing.md", branch = "1.0", remove_h1 = TRUE)
 ```
 
 ```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/Linear_chaining.md", branch = "1.0")
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/Linear_chaining.md", branch = "1.0", remove_h1 = TRUE)
 ```
 
 
 ```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/ScatterGather_parallelism.md", branch = "1.0")
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/ScatterGather_parallelism.md", branch = "1.0", remove_h1 = TRUE)
 ```
 
 ### Managing Software Environments
