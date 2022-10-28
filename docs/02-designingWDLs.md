@@ -22,7 +22,6 @@ We'll be using WDL 1.0 in this course but you can always check out the [openwdl 
 ## WDL 1.0 Syntax
 
 
-# Base structure
 There are 5 basic components that form the core structure of a WDL script: 
 * workflow
 * task
@@ -78,12 +77,10 @@ The order in which call statements are executed does not depend on the order in 
 
 #### Examples:
 ```wdl
-# in it's simplest form
 call my_task { }
 ```
 
 ```wdl
-# with input variables
 call my_task {
   input: 
     task_var1 = workflow_var1,
@@ -93,7 +90,6 @@ call my_task {
 ```
 
 ```wdl
-# with an alias and input variables
 
 call my_task as task_alias {
   input: 
@@ -194,7 +190,6 @@ Go to the next section: [Add Variables](./add_variables.md)
 ```
 
 
-# Workflow
 
 The `workflow` component is a required top-level component of a WDL script. It contains `call` statements that invoke `task` components, as well as workflow-level input definitions.
 
@@ -210,7 +205,6 @@ workflow myWorkflowName {
 
 ### Inputs
 
-# Specify inputs
 The simplest way to specify values for the input variables (such as file names and parameters) to the commands in your WDL scripts is to hard-code them, i.e. write them in the script itself. However, doing so forces you to make a new copy and edit the inputs every time you want to run your script on a new batch of data -- which undermines the advantages of setting up a pipeline script in the first place.
 
 A much better way to proceed is to specify all the values for the input variables that you want to be able to customize from run to run in a JSON file (a structured text format a bit like XML but better -- certainly more readable). Then all you need to do is create a new file of inputs for each new batch of data that you want to run through your pipeline. The execution engine will use that JSON file to fill in the values of inputs to commands in your script where appropriate.
@@ -272,7 +266,6 @@ Go to the next section: [Execute!](./execute.md)
 ```
 
 
-# Call
 
 The `call` component is used within the workflow body to specify that a particular task should be executed. In its simplest form, a call just needs a task name.
 
@@ -283,10 +276,8 @@ Note that the order in which call statements are executed does not depend on the
 ## Examples:
 
 ```wdl
-# in its simplest form
 call task_A
 
-# with input variables
 call task_A {
     input: 
         ref = my_ref,
@@ -294,7 +285,6 @@ call task_A {
         id = name
 }
 
-# with an alias and input variables
 call task_A as my_task {
     input:
         ref = my_ref,
@@ -316,7 +306,6 @@ Outputs to the workflow itself.
 ```
 
 
-# Task
 
 The `task` component is a top-level component of WDL scripts. It contains all the information necessary to "do something" by using a `command` along with definitions of input files and parameters, as well as the explicit identification of its output(s) in the `output` component. It can also be given additional (optional) properties using the `runtime`, `meta` and `parameter_meta` components.
 
@@ -345,7 +334,6 @@ task task_A {
 
 Task aliasing.
 
-# Task aliasing
 *When you need to call a task more than once in a workflow, use task aliasing.* 
 
 It would be tedious to copy-paste a task's definition and change the name each time you needed to use it again in the workflow. This method, termed [copy and paste programming](https://en.wikipedia.org/wiki/Copy-and-paste_programming), is simple enough up front but difficult to maintain in the long run. Imagine you found a typo in one of your tasks--you'd need to fix that typo in every single pasted task! However, using WDL's built-in task aliasing feature, you can call the same task code and assign it an alias. Then, following the principle of hierarchical naming, in order to access the output of an aliased task we use the alias, rather than the original task name.
@@ -546,7 +534,6 @@ For simplicity, we omitted the handling of index files, which has to be done exp
 ```
 
 
-# Add variables
 
 In this context, **variables** are placeholders we write into the script instead of actual filenames and parameter values. We can then specify the filenames and values we want to use at runtime (meaning when we run the script) without modifying the script at all, which is very convenient. We don't have to use variables for everything, mind you -- for some parameters, it makes sense to hardcode the values if they're never going to change from run to run.
 
@@ -647,7 +634,6 @@ Or, learn more about [what variable types are available in WDL](./variable_types
 ```
 
 
-# Add plumbing
 
 In this section, you'll learn about the different plumbing options supported by WDL and how you can implement plumbing in your own workflows.
 
@@ -835,7 +821,6 @@ call stepC {
 Continue to the next section, [Validate Syntax](./validate_syntax.md).
 
 
-# Linear chaining
 The simplest way to chain tasks together in a workflow is a **linear chain**, where we feed the output of one task to the input of the next, as shown in the diagram below.
 
 ![diagram of linear chaining. Input goes through stepA and generates an output which is then used as input in stepB, which generates output that is used as input in StepC](../Images/linear_chaining.png)
@@ -1015,7 +1000,6 @@ task SelectVariants {
 ```
 
 
-# Scatter-gather parallelism
 Parallelism is a way to make a program finish faster by performing several operations in parallel, rather than sequentially (i.e. waiting for each operation to finish before starting the next one). For a more detailed introduction on parallelism, you can read about it in-depth [here](https://gatk.broadinstitute.org/hc/en-us/articles/360035532012).
 
 ![Diagram depicting parallelism. Three separate inputs are individually used as input to the same workflow running in parallel. The workflow runs the input through a process StepA. Each independent workflow produces one output which is are then gathered and all used together as input to a new process StepB, which produces a single output.](../Images/ScatterGather.png)
