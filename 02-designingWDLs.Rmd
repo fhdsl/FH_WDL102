@@ -26,6 +26,41 @@ We'll be using WDL 1.0 in this course but you can always check out the [openwdl 
 ```{r, echo = FALSE, results = "asis"}
 cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/Base_structure.md", branch = "1.0")
 ```
+
+## Workflow Structure
+```{r, echo = FALSE, results = "asis"}
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/workflow.md", branch = "1.0")
+```
+
+### Inputs
+```{r, echo = FALSE, results = "asis"}
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/specify-inputs.md", branch = "1.0")
+```
+
+### Calls
+```{r, echo = FALSE, results = "asis"}
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/call.md", branch = "1.0")
+```
+
+### Outputs
+Outputs to the workflow itself.  
+
+
+
+### Tasks
+```{r, echo = FALSE, results = "asis"}
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/task.md", branch = "1.0")
+```
+
+Task aliasing.
+```{r, echo = FALSE, results = "asis"}
+cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/task-aliasing.md", branch = "1.0")
+```
+
+
+## Wiring Tasks Together
+
+
 ```{r, echo = FALSE, results = "asis"}
 cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/add_variables.md", branch = "1.0")
 ```
@@ -44,35 +79,11 @@ cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/Linear_chaining.md", b
 cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/ScatterGather_parallelism.md", branch = "1.0")
 ```
 
-
-
+### Managing Software Environments
 
 
 ## Tools for Editing WDLs
 - VSCode has an extension
 - ways to plot a DAG? 
 
-
-## Workflow Structure
-
-
-### Inputs
-
-
-### Tasks
-
-
-#### Inputs
-
-#### Command
-
-#### Outputs
-
-#### Runtime
-
-
-### Managing Software Environments
-
-
-## Wiring Tasks Together
 
