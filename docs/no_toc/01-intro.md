@@ -14,4 +14,4 @@ It will cover:
 
 ## Tools to Edit WDL
 
-VSCode has an extension
+VSCode (https://code.visualstudio.com/) has multiple extensions for WDL, including "WDL DevTools" and  "WDL Syntax Highlighter". 

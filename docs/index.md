@@ -1,6 +1,6 @@
 ---
-title: "WDL102: Designing Workflows"
-date: "October 28, 2022"
+title: "WDL102: Designing WDL Workflows"
+date: "November 08, 2022"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -10,9 +10,10 @@ description: A getting started guide to creating and testing WDL workflows
 favicon: assets/favicon.ico
 ---
 
-# About this Book {-}
+# About this Guide {-}
+
+This guide is intended to be a tool for getting started with designing your own WDL workflows. 
 
 
-
-<img src="assets/course-logo/wdl-102-navy.png" title="WDL 102 course logo" alt="course logo" style="display: block; margin: auto;" />
+<img src="assets/course-logo/wdl-102-navy.png" title="WDL logo" alt="course logo" style="display: block; margin: auto;" width="300" height="184"/>
 

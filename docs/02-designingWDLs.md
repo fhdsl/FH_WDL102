@@ -1,16 +1,13 @@
 
 
-# Introduction to WDL
-The Workflow Description Language (WDL) is a way to specify data processing workflows with a human-readable and -writeable syntax. 
-WDL makes it straightforward to define analysis tasks, chain them together in workflows, and parallelize their execution. 
-The language makes common patterns simple to express, while also admitting uncommon or complicated behavior; and strives to achieve portability not only across execution platforms, but also different types of users. 
-Whether one is an analyst, a programmer, an operator of a production system, or any other sort of user, WDL should be accessible and understandable.
+# What is WDL?
+The Workflow Description Language (WDL) is a way to specify data processing workflows with a human-readable and -writeable syntax. WDL makes it straightforward to define analysis tasks, chain them together in workflows, and parallelize their execution. 
 
-## openWDL
+The language makes common patterns simple to express, while also admitting uncommon or complicated behavior; and strives to achieve portability not only across execution platforms, but also different types of users. Whether one is an analyst, a programmer, an operator of a production system, or any other sort of user, WDL should be accessible and understandable.
 
-WDL was originally developed for genome analysis pipelines by the Broad Institute. 
-As its community grew, both end users as well as other organizations using WDL for their own software, it became clear that there was a need to allow WDL to become a true community driven standard. 
-The OpenWDL community has thus been formed to steward the WDL language specification and advocate its adoption.
+## OpenWDL
+
+WDL was originally developed for genome analysis pipelines by the Broad Institute. As its community grew, both end users as well as other organizations using WDL for their own software, it became clear that there was a need to allow WDL to become a true community driven standard. The OpenWDL community has thus been formed to steward the WDL language specification and advocate its adoption.
 
 There is ongoing work on WDL the specification, thus it has multiple versions.  Currently there are three versions to note:
 - draft-2 - this version was the version that much of the Broad's public facing documentation and example workflows were written in. 
@@ -1156,12 +1153,5 @@ To learn explicitly about how to specify the `~{GVCFs}`input, please see [this t
 #### Scatter limitations
 
 Note that the max allowable scatter width per scatter in Terra is 35,000.
-
-### Managing Software Environments
-
-
-## Tools for Editing WDLs
-- VSCode has an extension
-- ways to plot a DAG? 
 
 
