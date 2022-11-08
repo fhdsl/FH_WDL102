@@ -5,9 +5,8 @@ ottrpal::set_knitr_image_path()
 # Developing, Testing and Scaling Workflows
 
 
-
-
 ## Developing a New Workflow
+
 
 ### Start from a template
 Preferably one that executes cleanly - even if it's Hello World.
@@ -30,7 +29,7 @@ Shift to docker containers instead of modules, ensure that all inputs are specif
 
 
 
-## Approaches for Testing
+## Approaches to Testing
 - start small - start with truncated/downsampled data in the same formats but smaller!
 - add tasks one at a time and leverage call caching to test single additions quickly
 - start testing scatters with a scatter of one!
