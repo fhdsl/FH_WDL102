@@ -1,5 +1,6 @@
 introduction
-introduction-to-wdl
+tools-to-edit-wdl
+what-is-wdl
 openwdl
 wdl-1.0-syntax
 top-level-components-workflow-call-and-task
@@ -49,8 +50,6 @@ generic-example-script-2
 concrete-example-2
 concrete-example-script-2
 scatter-limitations
-managing-software-environments
-tools-for-editing-wdls
 developing-testing-and-scaling-workflows
 developing-a-new-workflow
 start-from-a-template
@@ -58,6 +57,6 @@ chose-software-modules
 add-tasks
 scale-up-inputs
 prep-for-other-platforms-and-sharing
-approaches-for-testing
+approaches-to-testing
 scaling-up-moving-to-the-cloud
 references
