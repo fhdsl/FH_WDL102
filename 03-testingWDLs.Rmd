@@ -23,7 +23,7 @@ Start to run workflow on full size data (scatters of 1), then start to scatter o
 
 
 ### Prep for Other Platforms and Sharing
-Shift to docker containers instead of modules, ensure that all inputs are specified as files not directories!!, start to optmize compute resources required for tasks (how much memory does it really need, or is it going to need many CPU's).
+Shift to docker containers instead of modules, ensure that all inputs are specified as files not directories!!, start to optimize compute resources required for tasks (how much memory does it really need, or is it going to need many CPU's).
 
 
 
