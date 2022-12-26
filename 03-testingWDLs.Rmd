@@ -35,6 +35,16 @@ Shift to docker containers instead of modules, ensure that all inputs are specif
 - start testing scatters with a scatter of one!
 
 
+### Testing Input Availability
+
+Validating a workflow only checks the formatting of the files but does not attempt to stage the inputs.  To do that you might consider tricking Cromwell into localizing all external inputs first by creating a dummy task that runs first before any of your steps in yoru workflow. 
+
+The inputs to this task need to be all externally obtained file inputs to any task in your workflow (not inputs to tasks that come from other WDL tasks!).  Then, upon running this workflow, Cromwell will try to localize all the inputs for this first task, before running any future tasks.  
+
+Then you have two options:
+- my inputs are small or local: just remove the input localizing task before re-running the workflow
+- my inputs are large or expensive to localize: specify the inputs to your workflow tasks as the outputs of this input localizing task by adding them as outputs.  
+
 ## Scaling Up, Moving to the Cloud
 - Test with a scatter of many small files (not full size!)
 - Begin optimizing computing resources for each task
