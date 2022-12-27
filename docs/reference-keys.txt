@@ -28,4 +28,3 @@ prep-for-other-platforms-and-sharing
 testing-input-availability
 scaling-up-moving-to-the-cloud
 wdl-at-fred-hutch
-references
