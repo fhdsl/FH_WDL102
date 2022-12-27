@@ -228,7 +228,7 @@ workflow myWorkflowName {
 <li>Workflow Description file</li>
 </ol>
 <ul>
-<li>in WDL, a list of tools to be run in a sequence, likely several, otherwise using a workflow manager is not the right approach.<br />
+<li>in WDL format, a list of tools to be run in a sequence, likely several, otherwise using a workflow manager is not the right approach.<br />
 </li>
 <li>This file describes the process that is desired to occur every time the workflow is run.</li>
 </ul>
@@ -236,15 +236,14 @@ workflow myWorkflowName {
 <li>Parameters file</li>
 </ol>
 <ul>
-<li>in json, a workflow-specific list of inputs and parameters that are intended to be set for every group of workflow executions.</li>
+<li>in json format, a workflow-specific list of inputs and parameters that are intended to be set for every group of workflow executions.</li>
 <li>Examples of what this input may include would be which genome to map to, reference data files to use, what environment modules to use, etc.</li>
 </ul>
 <ol start="3" style="list-style-type: decimal">
-<li>Batch file:<br />
-</li>
+<li>Batch file</li>
 </ol>
 <ul>
-<li>This file is a list of data locations and any other sample/job-specific information the workflow needs. Ideally this would be relatively minimal so that the consistency of the analysis between input data sets are as similar as possible to leverage the strengths of a reproducible workflow. This file would be different for each batch or run of a workflow.<br />
+<li>in json format, is a list of data locations and any other sample/job-specific information the workflow needs. Ideally this would be relatively minimal so that the consistency of the analysis between input data sets are as similar as possible to leverage the strengths of a reproducible workflow. This file would be different for each batch or run of a workflow.<br />
 </li>
 </ul>
 <ol start="4" style="list-style-type: decimal">
