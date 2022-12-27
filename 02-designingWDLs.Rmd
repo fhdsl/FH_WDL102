@@ -13,67 +13,18 @@ WDL was originally developed for genome analysis pipelines by the Broad Institut
 
 There is ongoing work on WDL the specification, thus it has multiple versions.  Currently there are three versions to note:
 - draft-2 - this version was the version that much of the Broad's public facing documentation and example workflows were written in. 
-- 1.0 - this is a more recent version that is the most up to date version of the specification that Cromwell can interpret.  We use WDL 1.0 at the Hutch.
+- 1.0 - this is a more recent version that is the most up to date version of the specification that Cromwell can interpret.  We use WDL 1.0 at the Hutch when we use Cromwell.
 - 1.1 - this is an even more recent version that not all WDL engines support yet. 
 
 We'll be using WDL 1.0 in this course but you can always check out the [openwdl repo](https://github.com/openwdl/wdl) for more information about tweaking these instructions for different versions of WDL.  
 
-## WDL 1.0 Syntax
 
-```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/Base_structure.md", branch = "1.0", remove_h1 = TRUE)
-```
+## Documentation about the WDL Spec
 
-## Workflow Structure
-```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/workflow.md", branch = "1.0", remove_h1 = TRUE)
-```
-
-### Inputs
-```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/specify_inputs.md", branch = "1.0", remove_h1 = TRUE)
-```
-
-### Calls
-```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/call.md", branch = "1.0", remove_h1 = TRUE)
-```
-
-### Outputs
-Outputs to the workflow itself.  
+To begin learning how to write WDL itself, the best (and evolving) resource is the [WDL-Docs](https://wdl-docs.readthedocs.io/en/stable/) site being developed by the OpenWDL community.  There you'll find examples and guidance about the 1.0 WDL specification and using it to write workflows.  
 
 
 
-### Tasks
-```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/task.md", branch = "1.0", remove_h1 = TRUE)
-```
 
-Task aliasing.
-```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/task_aliasing.md", branch = "1.0", remove_h1 = TRUE)
-```
-
-
-## Wiring Tasks Together
-
-
-```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/add_variables.md", branch = "1.0", remove_h1 = TRUE)
-```
-
-
-```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/add_plumbing.md", branch = "1.0", remove_h1 = TRUE)
-```
-
-```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/Linear_chaining.md", branch = "1.0", remove_h1 = TRUE)
-```
-
-
-```{r, echo = FALSE, results = "asis"}
-cow::borrow_chapter(repo_name = "openwdl/wdl-docs", "Docs/ScatterGather_parallelism.md", branch = "1.0", remove_h1 = TRUE)
-```
 
 
