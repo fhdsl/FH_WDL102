@@ -33,7 +33,7 @@ To begin learning how to write WDL itself, the best (and evolving) resource is t
 
 ### Tools to Edit WDL
 
-VSCode (https://code.visualstudio.com/) has multiple extensions for WDL, including "WDL DevTools" and  "WDL Syntax Highlighter". 
+[VSCode](https://code.visualstudio.com/) has multiple extensions for WDL, including "WDL DevTools" and  "WDL Syntax Highlighter" which can be very helpful for color-coding content and detecting issues while you're writing, before workflow validation.  
 
 ##  What Is a WDL Engine?
 
