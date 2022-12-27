@@ -2,26 +2,165 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# What is WDL?
-The Workflow Description Language (WDL) is a way to specify data processing workflows with a human-readable and -writeable syntax. WDL makes it straightforward to define analysis tasks, chain them together in workflows, and parallelize their execution. 
+# Designing WDLs
 
-The language makes common patterns simple to express, while also admitting uncommon or complicated behavior; and strives to achieve portability not only across execution platforms, but also different types of users. Whether one is an analyst, a programmer, an operator of a production system, or any other sort of user, WDL should be accessible and understandable.
+The "Getting Started with WDL" and "WDL Script Components" sections of [the OpenWDL docs site](https://wdl-docs.readthedocs.io/en/stable/) provides a useful background into the essential parts of WDL you'll need to learn to start designing your own WDLs. 
 
-## OpenWDL
+A very useful way to begin learning how to write a WDL is actually to take a WDL that you know "works" in that it has the required formatting and structure to be executed by a WDL engine, and edit it.  We have created a repository with [test workflows](https://github.com/FredHutch/wdl-test-workflows) in it that can serve as a basis to get started.  
 
-WDL was originally developed for genome analysis pipelines by the Broad Institute. As its community grew, both end users as well as other organizations using WDL for their own software, it became clear that there was a need to allow WDL to become a true community driven standard. The OpenWDL community has thus been formed to steward the WDL language specification and advocate its adoption.
+## Writing Workflows
+WDL is intended to be a relatively easy to read workflow language.  There are other workflow languages and workflow managers that run them, but WDL was/is primarily intended to be shared and interpreted by others that may or may not have experience with any given domain-specific language (like Nextflow).  Writing workflows in WDL, therefore, has a fairly low barrier to entry for those of us new to writing workflows.  
 
-There is ongoing work on WDL the specification, thus it has multiple versions.  Currently there are three versions to note:
-- draft-2 - this version was the version that much of the Broad's public facing documentation and example workflows were written in. 
-- 1.0 - this is a more recent version that is the most up to date version of the specification that Cromwell can interpret.  We use WDL 1.0 at the Hutch when we use Cromwell.
-- 1.1 - this is an even more recent version that not all WDL engines support yet. 
+The basics of this workflow language includes a similar pattern where you specify workflow inputs, the order of tasks and how they pass data between them, and which files are the outputs of the workflow itself.  Here is an example of a single-task workflow that takes some inputs, runs `bwa mem`, then outputs the resulting bam file and it's index.  
 
-We'll be using WDL 1.0 in this course but you can always check out the [openwdl repo](https://github.com/openwdl/wdl) for more information about tweaking these instructions for different versions of WDL.  
+```
+version 1.0
+workflow myWorkflowName {
+  input {
+    String sample_name = "sample1"
+    File myfastq = "/path/to/myfastq.fastq.gz"
+  }
+
+  call BwaMem {
+    input:
+      input_fastq = myfastq,
+      base_file_name = sample_name,
+      ref_fasta = "hg19.fasta.fa"
+      ref_fasta_index = "hg19.fasta.fa",
+      ref_dict = "hg19.fasta.dict",
+      ref_alt = "hg19.fasta.alt",
+      ref_amb = "hg19.fasta.amb",
+      ref_ann = "hg19.fasta.ann",
+      ref_bwt = "hg19.fasta.bwt",
+      ref_pac = "hg19.fasta.pac",
+      ref_sa = "hg19.fasta.sa"
+  }
+
+  output {
+    File output_bam = BwaMem.output_bam
+    File output_bai = BwaMem.output_bai
+  }
+}
+```
 
 
-## Documentation about the WDL Spec
 
-To begin learning how to write WDL itself, the best (and evolving) resource is the [WDL-Docs](https://wdl-docs.readthedocs.io/en/stable/) site being developed by the OpenWDL community.  There you'll find examples and guidance about the 1.0 WDL specification and using it to write workflows.  
+Tasks are constructed in the same WDL file by naming them and providing similar information.  Here's an example of a task that runs `bwa mem` on an interleaved fastq file using a Fred Hutch docker container.  Notice there are sections for the relevant portions of the task, such as `input` (what files or variables are needed), `command` (or what it should run), `output` (which of the generated files is considered the output of the task), and `runtime` (such as what HPC resources and software should be used for this task).  
+
+```
+task BwaMem {
+  input {
+    File input_fastq
+    String base_file_name
+    File ref_fasta
+    File ref_fasta_index
+    File ref_dict
+    File ref_alt
+    File ref_amb
+    File ref_ann
+    File ref_bwt
+    File ref_pac
+    File ref_sa
+  }
+  command {
+
+    bwa mem \
+      -p -v 3 -t 16 -M \
+      ${ref_fasta} ${input_fastq} > ${base_file_name}.sam 
+    samtools view -1bS -@ 15 -o ${base_file_name}.aligned.bam ${base_file_name}.sam
+  }
+  output {
+    File output_bam = "${base_file_name}.aligned.bam"
+    File output_bai = "${base_file_name}.aligned.bam.bai"
+  }
+  runtime {
+    memory: "32 GB"
+    cpu: 16
+    docker: "fredhutch/bwa:0.7.17"
+  }
+}
+```
+
+You can find more about constructing the rest of your workflow at the OpenWDL docs site, and in future content here.  
+
+### Design Recommendations
+In order to improve shareability and also leverage the `fh.wdlR` package, we recommend you structure your WDL based workflows with the following input files:
+
+1.  Workflow Description file
+  - in WDL, a list of tools to be run in a sequence, likely several, otherwise using a workflow manager is not the right approach.  
+  - This file describes the process that is desired to occur every time the workflow is run.
+2.  Parameters file
+  - in json, a workflow-specific list of inputs and parameters that are intended to be set for every group of workflow executions.
+  - Examples of what this input may include would be which genome to map to, reference data files to use, what environment modules to use, etc.
+3.  Batch file:  
+  - This file is a list of data locations and any other sample/job-specific information the workflow needs.  Ideally this would be relatively minimal so that the consistency of the analysis between input data sets are as similar as possible to leverage the strengths of a reproducible workflow.  This file would be different for each batch or run of a workflow.    
+4.  Workflow options (OPTIONAL)
+  - A json that contains information about how the workflow should be run (described below). 
+
+
+
+
+
+## Customizing Workflow Runs
+You can tailor how a workflow might be run by various backends (computing infrastructure like a SLURM cluster or a cloud based compute provider), or with customized defaults.  
+
+### Workflow Options
+
+You can find additional [documentation on the Workflow Options json file](https://cromwell.readthedocs.io/en/stable/wf_options/Overview/) that can be used to customize how Cromwell runs your workflow.  We'll highlight some specific features that are often useful for many users.  
+
+Workflow options can be applied to any workflow to tune how the individual instance of the workflow should behave. There are more options than these that can be found in the Cromwell docs site, but of most interest are the following parameters:
+
+
+- `workflow_failure_mode`: `NoNewCalls` indicates that if one task fails, no new calls will be sent and all existing calls will be allowed to finish.  `ContinueWhilePossible` indicates that even if one task fails, all other task series should be continued until all possible jobs are completed either successfully or not.
+- `default_runtime_attributes.maxRetries`: The maximum number of times a job can be retried if it fails in a way that is considered a retryable failure (like if a job gets dumped or the server goes down).
+- `write_to_cache`: Do you want to write metadata about this workflow to the database to allow for future use of the cached files it might create?
+- `read_from_cache`: Do you want to query the database to determine if portions of this workflow have already completed successfully, thus they do not need to be re-computed. 
+
+
+### Runtime Defaults
+
+```
+{
+    "default_runtime_attributes": {
+        "docker": "ubuntu:latest",
+        "continueOnReturnCode": [4, 8, 15, 16, 23, 42]
+    }
+}
+```
+
+### Call Caching
+
+
+
+```
+{
+    "write_to_cache": true,
+    "read_from_cache": true
+}
+```
+
+### Workflow Failure Mode 
+
+```
+{
+    "workflow_failure_mode": "ContinueWhilePossible"
+}
+```
+Values are: `ContinueWhilePossible` or `NoNewCalls`
+
+
+### Copying outputs
+
+Read more details [here](https://cromwell.readthedocs.io/en/stable/wf_options/Overview/#output-copying), but the ability to copy the workflow outputs to another location can be very useful for data management.  
+
+```
+{
+    "final_workflow_outputs_dir": "/my/path/workflow/archive",
+    "use_relative_output_paths": false
+}
+```
+
+If you want to collapse the directory structure, you can set `use_relative_output_paths` to `true` but if a file collision occurs Cromwell will stop and report the workflow as failed. 
 
 
 
