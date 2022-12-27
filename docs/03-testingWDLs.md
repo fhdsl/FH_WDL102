@@ -63,3 +63,6 @@ Then you have two options:
   - what instance types exist and which are the best for you tasks/data
   - how do the data need to be stored in an object store?
   - how can you get permissions set up to access both the data and the compute resources?
+
+
+
