@@ -9,7 +9,6 @@
 |**Pedagogy**||
 |Content Author(s)|Amy Paguirigan|
 |Content Editor(s)/Reviewer(s) | Checked your content|
-|Content Director(s) | Helped guide the content direction|
 |Acknowledgments| Gave small assistance to content but not to the level of consulting |
 |**Technical**||
 |Template Publishing Engineers|[Candace Savonen], [Carrie Wright]|

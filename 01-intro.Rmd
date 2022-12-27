@@ -35,6 +35,8 @@ To begin learning how to write WDL itself, the best (and evolving) resource is t
 
 [VSCode](https://code.visualstudio.com/) has multiple extensions for WDL, including "WDL DevTools" and  "WDL Syntax Highlighter" which can be very helpful for color-coding content and detecting issues while you're writing, before workflow validation.  
 
+Also, there are a variety of extensions that can make working with the input files in json format much easier.  They can be used to detect errors, color code them, format them in ways more easy to view as a human.  Some examples include, `json`, `Prettify JSON`, or `JSON (Beautify JSON)`.  
+
 ##  What Is a WDL Engine?
 
 A WDL engine is software that understands WDL and can interpret the instructions in order to execute the computational tasks involved in the workflow.  An example of a WDL engine, one used at the Fred Hutch, is Cromwell.  Cromwell is a software tool that can be used to coordinate and streamline the actual running of bioinformatic (or other analytic) workflows. It is the software that underlies the Broad Institute's [Terra platform](https://terra.bio/).  It's one of several tools and platforms that are able to run workflows written in the WDL language, including [miniWDL](https://miniwdl.readthedocs.io/en/latest/)from the Chan-Zuckerburg initiative, [DNANexus](https://www.dnanexus.com/), and other emerging tools.  

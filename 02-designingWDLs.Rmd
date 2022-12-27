@@ -87,13 +87,13 @@ You can find more about constructing the rest of your workflow at the OpenWDL do
 In order to improve shareability and also leverage the `fh.wdlR` package, we recommend you structure your WDL based workflows with the following input files:
 
 1.  Workflow Description file
-  - in WDL, a list of tools to be run in a sequence, likely several, otherwise using a workflow manager is not the right approach.  
+  - in WDL format, a list of tools to be run in a sequence, likely several, otherwise using a workflow manager is not the right approach.  
   - This file describes the process that is desired to occur every time the workflow is run.
 2.  Parameters file
-  - in json, a workflow-specific list of inputs and parameters that are intended to be set for every group of workflow executions.
+  - in json format, a workflow-specific list of inputs and parameters that are intended to be set for every group of workflow executions.
   - Examples of what this input may include would be which genome to map to, reference data files to use, what environment modules to use, etc.
-3.  Batch file:  
-  - This file is a list of data locations and any other sample/job-specific information the workflow needs.  Ideally this would be relatively minimal so that the consistency of the analysis between input data sets are as similar as possible to leverage the strengths of a reproducible workflow.  This file would be different for each batch or run of a workflow.    
+3.  Batch file
+  - in json format, is a list of data locations and any other sample/job-specific information the workflow needs.  Ideally this would be relatively minimal so that the consistency of the analysis between input data sets are as similar as possible to leverage the strengths of a reproducible workflow.  This file would be different for each batch or run of a workflow.    
 4.  Workflow options (OPTIONAL)
   - A json that contains information about how the workflow should be run (described below). 
 
