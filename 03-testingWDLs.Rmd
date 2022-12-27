@@ -37,7 +37,7 @@ Shift to docker containers instead of modules, ensure that all inputs are specif
 
 ### Testing Input Availability
 
-Validating a workflow only checks the formatting of the files but does not attempt to stage the inputs.  To do that you might consider tricking Cromwell into localizing all external inputs first by creating a dummy task that runs first before any of your steps in yoru workflow. 
+Validating a workflow only checks the formatting of the files but does not attempt to stage the inputs.  To do that you might consider tricking Cromwell into localizing all external inputs first by creating a dummy task that runs first before any of your steps in your workflow. 
 
 The inputs to this task need to be all externally obtained file inputs to any task in your workflow (not inputs to tasks that come from other WDL tasks!).  Then, upon running this workflow, Cromwell will try to localize all the inputs for this first task, before running any future tasks.  
 

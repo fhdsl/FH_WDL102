@@ -16,7 +16,7 @@ VSCode (https://code.visualstudio.com/) has multiple extensions for WDL, includi
 
 ### Workflow Options
 
-You can find additional [documention on the Workflow Options json file](https://cromwell.readthedocs.io/en/stable/wf_options/Overview/) that can be used to customize how Cromwell runs your workflow.  We'll highlight some specific features that are often useful for many users.  
+You can find additional [documentation on the Workflow Options json file](https://cromwell.readthedocs.io/en/stable/wf_options/Overview/) that can be used to customize how Cromwell runs your workflow.  We'll highlight some specific features that are often useful for many users.  
 
 ### Runtime Defaults
 

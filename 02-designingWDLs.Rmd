@@ -21,12 +21,12 @@ We'll be using WDL 1.0 in this course but you can always check out the [openwdl 
 
 ## Documentation about the WDL Spec
 
-To begin learning how to write WDL itself, the best (and evolving) resource is the [WDL-Docs](https://wdl-docs.readthedocs.io/en/stable/) site being developed by the openWDL community.  There you'll find examples and guidance about the 1.0 WDL specification and using it to write workflows.  
+To begin learning how to write WDL itself, the best (and evolving) resource is the [WDL-Docs](https://wdl-docs.readthedocs.io/en/stable/) site being developed by the OpenWDL community.  There you'll find examples and guidance about the 1.0 WDL specification and using it to write workflows.  
 
 
 ## Creating an Inputs template
 
-There is a tool that is installed along with Cromwell called "womtool".  This tool is what does workflow valdiation through the Shiny app and fh.wdlR package.  However, it has additional features that are not available unless you run it directly.    
+There is a tool that is installed along with Cromwell called "womtool".  This tool is what does workflow validation through the Shiny app and fh.wdlR package.  However, it has additional features that are not available unless you run it directly.    
 
 There is [specific documentation from the Broad about womtool](https://cromwell.readthedocs.io/en/stable/WOMtool/) that can give you more information about the parameters and features of this small tool.  
 
