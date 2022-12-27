@@ -4,7 +4,7 @@ ottrpal::set_knitr_image_path()
 ```
 
 # Introduction
-This course is an introduction to designing and testing WDL workflows for beginner and intermediate users who primarily develop and run their own workflows for their own research work.  
+This guide is an introduction to designing and testing WDL workflows for beginner and intermediate users who primarily develop and run their own workflows for their own research work.  
 
 
 
