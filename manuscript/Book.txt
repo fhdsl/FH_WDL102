@@ -1,6 +1,6 @@
 1-Introduction.md
-2-Introduction-to-WDL.md
+2-What-is-WDL?.md
 3-Developing,-Testing-and-Scaling-Workflows.md
 4-References.md
-About-this-Book.md
+About-this-Guide.md
 About-the-Authors.md
