@@ -1,10 +1,11 @@
-book_filename: "WDL102: Workflows"
+book_filename: "WDL102: Designing, Testing and Optimizing Workflows"
 chapter_name: "Chapter "
 repo: https://github.com/fhdsl/FH_WDL102_Workflows/
 rmd_files: ["index.Rmd",
             "01-intro.Rmd",
             "02-designingWDLs.Rmd",
             "03-testingWDLs.Rmd",
+            "04-appendix.Rmd",
             "About.Rmd",
             "References.Rmd"]
 new_session: yes
