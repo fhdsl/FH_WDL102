@@ -16,7 +16,7 @@ module load cromwell/84
 java -jar $EBROOTCROMWELL/womtool.jar inputs myNewWorkflow.wdl > input_template.json
 ```
 
-Now your template input information will be saved in the file `input_template.json1`.  
+Now your template input information will be saved in the file `input_template.json`.  
 
 
 
