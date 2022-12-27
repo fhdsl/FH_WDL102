@@ -2,6 +2,5 @@
 2-Designing-WDLs.md
 3-Developing,-Testing-and-Scaling-Workflows.md
 4-WDL-at-Fred-Hutch.md
-5-References.md
 About-this-Guide.md
 About-the-Authors.md
