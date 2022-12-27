@@ -4,7 +4,7 @@ ottrpal::set_knitr_image_path()
 ```
 
 # Introduction
-This course is an introduction to designing and testing WDL workflows for beginner and intermediate users who primarily develop and run their own workflows for their own research work.  
+This guide is an introduction to designing and testing WDL workflows for beginner and intermediate users who primarily develop and run their own workflows for their own research work.  
 
 
 
@@ -31,16 +31,9 @@ We'll be using WDL 1.0 in this course but you can always check out the [openwdl 
 To begin learning how to write WDL itself, the best (and evolving) resource is the [WDL-Docs](https://wdl-docs.readthedocs.io/en/stable/) site being developed by the OpenWDL community.  There you'll find examples and guidance about the 1.0 WDL specification and using it to write workflows.  
 
 
----
-title: Cromwell Workflow Manager and WDL Workflows
-primary_reviewers: vortexing
----
-This page should get you started using using the [Cromwell workflow manager](https://cromwell.readthedocs.io/en/stable/) from the Broad as well as useful tidbits and links regarding WDL based workflows at the Fred Hutch. If you have questions about what Cromwell is, how it might help you or to get started, feel free to email Amy Paguirigan (Senior Staff Scientist), `apaguiri`.   For support or to ask questions and get help troubleshooting, please also see our #workflow-managers channel in the [FH-Data Slack workspace](https://fhdata.slack.com/).
-
-
 ### Tools to Edit WDL
 
-VSCode (https://code.visualstudio.com/) has multiple extensions for WDL, including "WDL DevTools" and  "WDL Syntax Highlighter". 
+[VSCode](https://code.visualstudio.com/) has multiple extensions for WDL, including "WDL DevTools" and  "WDL Syntax Highlighter" which can be very helpful for color-coding content and detecting issues while you're writing, before workflow validation.  
 
 ##  What Is a WDL Engine?
 

@@ -6,8 +6,7 @@ rmd_files: ["index.Rmd",
             "02-designingWDLs.Rmd",
             "03-testingWDLs.Rmd",
             "04-appendix.Rmd",
-            "About.Rmd",
-            "References.Rmd"]
+            "About.Rmd"]
 new_session: yes
 delete_merged_file: true
 language:
