@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2022-11-08" />
+<meta name="date" content="2022-12-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,69 +54,6 @@
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
-<style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  background-color: #f8f8f8; }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ef2929; } /* Alert */
-code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
-code span.bn { color: #0000cf; } /* BaseN */
-code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
-code span.co { color: #8f5902; font-style: italic; } /* Comment */
-code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
-code span.dt { color: #204a87; } /* DataType */
-code span.dv { color: #0000cf; } /* DecVal */
-code span.er { color: #a40000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
-code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
-code span.ot { color: #8f5902; } /* Other */
-code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
-code span.ss { color: #4e9a06; } /* SpecialString */
-code span.st { color: #4e9a06; } /* String */
-code span.va { color: #000000; } /* Variable */
-code span.vs { color: #4e9a06; } /* VerbatimString */
-code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 
 <link rel="stylesheet" href="assets/style.css" type="text/css" />
@@ -139,83 +76,33 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#tools-to-edit-wdl"><i class="fa fa-check"></i><b>1.1</b> Tools to Edit WDL</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#customizing-workflow-runs"><i class="fa fa-check"></i><b>1.2</b> Customizing Workflow Runs</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="introduction.html"><a href="introduction.html#workflow-options"><i class="fa fa-check"></i><b>1.2.1</b> Workflow Options</a></li>
+<li class="chapter" data-level="1.2.2" data-path="introduction.html"><a href="introduction.html#runtime-defaults"><i class="fa fa-check"></i><b>1.2.2</b> Runtime Defaults</a></li>
+<li class="chapter" data-level="1.2.3" data-path="introduction.html"><a href="introduction.html#call-caching"><i class="fa fa-check"></i><b>1.2.3</b> Call Caching</a></li>
+<li class="chapter" data-level="1.2.4" data-path="introduction.html"><a href="introduction.html#workflow-failure-mode"><i class="fa fa-check"></i><b>1.2.4</b> Workflow Failure Mode</a></li>
+<li class="chapter" data-level="1.2.5" data-path="introduction.html"><a href="introduction.html#copying-outputs"><i class="fa fa-check"></i><b>1.2.5</b> Copying outputs</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="what-is-wdl.html"><a href="what-is-wdl.html"><i class="fa fa-check"></i><b>2</b> What is WDL?</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="what-is-wdl.html"><a href="what-is-wdl.html#openwdl"><i class="fa fa-check"></i><b>2.1</b> OpenWDL</a></li>
-<li class="chapter" data-level="2.2" data-path="what-is-wdl.html"><a href="what-is-wdl.html#wdl-1.0-syntax"><i class="fa fa-check"></i><b>2.2</b> WDL 1.0 Syntax</a></li>
-<li class="chapter" data-level="2.3" data-path="what-is-wdl.html"><a href="what-is-wdl.html#top-level-components-workflow-call-and-task"><i class="fa fa-check"></i><b>2.3</b> Top-level components: workflow, call and task</a>
-<ul>
-<li class="chapter" data-level="2.3.1" data-path="what-is-wdl.html"><a href="what-is-wdl.html#call"><i class="fa fa-check"></i><b>2.3.1</b> call</a></li>
-<li class="chapter" data-level="2.3.2" data-path="what-is-wdl.html"><a href="what-is-wdl.html#task"><i class="fa fa-check"></i><b>2.3.2</b> task</a></li>
-<li class="chapter" data-level="2.3.3" data-path="what-is-wdl.html"><a href="what-is-wdl.html#workflow"><i class="fa fa-check"></i><b>2.3.3</b> workflow</a></li>
-</ul></li>
-<li class="chapter" data-level="2.4" data-path="what-is-wdl.html"><a href="what-is-wdl.html#core-task-level-components-command-and-output"><i class="fa fa-check"></i><b>2.4</b> Core task-level components: command and output</a>
-<ul>
-<li class="chapter" data-level="2.4.1" data-path="what-is-wdl.html"><a href="what-is-wdl.html#command"><i class="fa fa-check"></i><b>2.4.1</b> command</a></li>
-<li class="chapter" data-level="2.4.2" data-path="what-is-wdl.html"><a href="what-is-wdl.html#output"><i class="fa fa-check"></i><b>2.4.2</b> output</a></li>
-</ul></li>
-<li class="chapter" data-level="2.5" data-path="what-is-wdl.html"><a href="what-is-wdl.html#workflow-structure"><i class="fa fa-check"></i><b>2.5</b> Workflow Structure</a></li>
-<li class="chapter" data-level="2.6" data-path="what-is-wdl.html"><a href="what-is-wdl.html#example-4"><i class="fa fa-check"></i><b>2.6</b> Example:</a>
-<ul>
-<li class="chapter" data-level="2.6.1" data-path="what-is-wdl.html"><a href="what-is-wdl.html#inputs"><i class="fa fa-check"></i><b>2.6.1</b> Inputs</a></li>
-</ul></li>
-<li class="chapter" data-level="2.7" data-path="what-is-wdl.html"><a href="what-is-wdl.html#generating-the-template-json"><i class="fa fa-check"></i><b>2.7</b> Generating the template JSON</a></li>
-<li class="chapter" data-level="2.8" data-path="what-is-wdl.html"><a href="what-is-wdl.html#customizing-the-inputs-file-for-a-particular-run"><i class="fa fa-check"></i><b>2.8</b> Customizing the inputs file for a particular run</a>
-<ul>
-<li class="chapter" data-level="2.8.1" data-path="what-is-wdl.html"><a href="what-is-wdl.html#example-5"><i class="fa fa-check"></i><b>2.8.1</b> Example</a></li>
-<li class="chapter" data-level="2.8.2" data-path="what-is-wdl.html"><a href="what-is-wdl.html#calls"><i class="fa fa-check"></i><b>2.8.2</b> Calls</a></li>
-</ul></li>
-<li class="chapter" data-level="2.9" data-path="what-is-wdl.html"><a href="what-is-wdl.html#examples-1"><i class="fa fa-check"></i><b>2.9</b> Examples:</a>
-<ul>
-<li class="chapter" data-level="2.9.1" data-path="what-is-wdl.html"><a href="what-is-wdl.html#outputs"><i class="fa fa-check"></i><b>2.9.1</b> Outputs</a></li>
-<li class="chapter" data-level="2.9.2" data-path="what-is-wdl.html"><a href="what-is-wdl.html#tasks"><i class="fa fa-check"></i><b>2.9.2</b> Tasks</a></li>
-</ul></li>
-<li class="chapter" data-level="2.10" data-path="what-is-wdl.html"><a href="what-is-wdl.html#example-6"><i class="fa fa-check"></i><b>2.10</b> Example:</a></li>
-<li class="chapter" data-level="2.11" data-path="what-is-wdl.html"><a href="what-is-wdl.html#generic-example-script"><i class="fa fa-check"></i><b>2.11</b> Generic example script</a></li>
-<li class="chapter" data-level="2.12" data-path="what-is-wdl.html"><a href="what-is-wdl.html#concrete-example"><i class="fa fa-check"></i><b>2.12</b> Concrete example</a></li>
-<li class="chapter" data-level="2.13" data-path="what-is-wdl.html"><a href="what-is-wdl.html#concrete-example-script"><i class="fa fa-check"></i><b>2.13</b> Concrete example script</a></li>
-<li class="chapter" data-level="2.14" data-path="what-is-wdl.html"><a href="what-is-wdl.html#wiring-tasks-together"><i class="fa fa-check"></i><b>2.14</b> Wiring Tasks Together</a></li>
-<li class="chapter" data-level="2.15" data-path="what-is-wdl.html"><a href="what-is-wdl.html#adding-task-level-variables"><i class="fa fa-check"></i><b>2.15</b> Adding task-level variables</a></li>
-<li class="chapter" data-level="2.16" data-path="what-is-wdl.html"><a href="what-is-wdl.html#adding-workflow-level-variables"><i class="fa fa-check"></i><b>2.16</b> Adding workflow-level variables</a></li>
-<li class="chapter" data-level="2.17" data-path="what-is-wdl.html"><a href="what-is-wdl.html#what-is-plumbing"><i class="fa fa-check"></i><b>2.17</b> What is plumbing?</a>
-<ul>
-<li class="chapter" data-level="2.17.1" data-path="what-is-wdl.html"><a href="what-is-wdl.html#simple-connections"><i class="fa fa-check"></i><b>2.17.1</b> Simple connections</a></li>
-<li class="chapter" data-level="2.17.2" data-path="what-is-wdl.html"><a href="what-is-wdl.html#switching-and-iterating-logic"><i class="fa fa-check"></i><b>2.17.2</b> Switching and iterating logic</a></li>
-<li class="chapter" data-level="2.17.3" data-path="what-is-wdl.html"><a href="what-is-wdl.html#efficiency-through-code-re-use"><i class="fa fa-check"></i><b>2.17.3</b> Efficiency through code re-use</a></li>
-</ul></li>
-<li class="chapter" data-level="2.18" data-path="what-is-wdl.html"><a href="what-is-wdl.html#plumbing-options"><i class="fa fa-check"></i><b>2.18</b> Plumbing options</a>
-<ul>
-<li class="chapter" data-level="2.18.1" data-path="what-is-wdl.html"><a href="what-is-wdl.html#linear-chaining"><i class="fa fa-check"></i><b>2.18.1</b> Linear Chaining</a></li>
-<li class="chapter" data-level="2.18.2" data-path="what-is-wdl.html"><a href="what-is-wdl.html#multi-input-multi-output"><i class="fa fa-check"></i><b>2.18.2</b> Multi-input / Multi-output</a></li>
-<li class="chapter" data-level="2.18.3" data-path="what-is-wdl.html"><a href="what-is-wdl.html#branch-and-merge"><i class="fa fa-check"></i><b>2.18.3</b> Branch and Merge</a></li>
-<li class="chapter" data-level="2.18.4" data-path="what-is-wdl.html"><a href="what-is-wdl.html#conditionals-ifelse"><i class="fa fa-check"></i><b>2.18.4</b> Conditionals (if/else)</a></li>
-<li class="chapter" data-level="2.18.5" data-path="what-is-wdl.html"><a href="what-is-wdl.html#scatter-gather-parallelism"><i class="fa fa-check"></i><b>2.18.5</b> Scatter-Gather Parallelism</a></li>
-<li class="chapter" data-level="2.18.6" data-path="what-is-wdl.html"><a href="what-is-wdl.html#task-aliasing"><i class="fa fa-check"></i><b>2.18.6</b> Task Aliasing</a></li>
-</ul></li>
-<li class="chapter" data-level="2.19" data-path="what-is-wdl.html"><a href="what-is-wdl.html#generic-example-script-1"><i class="fa fa-check"></i><b>2.19</b> Generic example script</a></li>
-<li class="chapter" data-level="2.20" data-path="what-is-wdl.html"><a href="what-is-wdl.html#concrete-example-1"><i class="fa fa-check"></i><b>2.20</b> Concrete example</a>
-<ul>
-<li class="chapter" data-level="2.20.1" data-path="what-is-wdl.html"><a href="what-is-wdl.html#concrete-example-script-1"><i class="fa fa-check"></i><b>2.20.1</b> Concrete example script</a></li>
-</ul></li>
-<li class="chapter" data-level="2.21" data-path="what-is-wdl.html"><a href="what-is-wdl.html#generic-example-script-2"><i class="fa fa-check"></i><b>2.21</b> Generic example script</a></li>
-<li class="chapter" data-level="2.22" data-path="what-is-wdl.html"><a href="what-is-wdl.html#concrete-example-2"><i class="fa fa-check"></i><b>2.22</b> Concrete example</a>
-<ul>
-<li class="chapter" data-level="2.22.1" data-path="what-is-wdl.html"><a href="what-is-wdl.html#concrete-example-script-2"><i class="fa fa-check"></i><b>2.22.1</b> Concrete example script</a></li>
-</ul></li>
+<li class="chapter" data-level="2.2" data-path="what-is-wdl.html"><a href="what-is-wdl.html#documentation-about-the-wdl-spec"><i class="fa fa-check"></i><b>2.2</b> Documentation about the WDL Spec</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html"><i class="fa fa-check"></i><b>3</b> Developing, Testing and Scaling Workflows</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#developing-a-new-workflow"><i class="fa fa-check"></i><b>3.1</b> Developing a New Workflow</a>
+<li class="chapter" data-level="3.1" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#creating-an-inputs-template"><i class="fa fa-check"></i><b>3.1</b> Creating an Inputs template</a></li>
+<li class="chapter" data-level="3.2" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#approaches-to-testing-and-development"><i class="fa fa-check"></i><b>3.2</b> Approaches to Testing and Development</a>
 <ul>
-<li class="chapter" data-level="3.1.1" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#start-from-a-template"><i class="fa fa-check"></i><b>3.1.1</b> Start from a template</a></li>
-<li class="chapter" data-level="3.1.2" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#chose-software-modules"><i class="fa fa-check"></i><b>3.1.2</b> Chose Software Modules</a></li>
-<li class="chapter" data-level="3.1.3" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#add-tasks"><i class="fa fa-check"></i><b>3.1.3</b> Add Tasks</a></li>
-<li class="chapter" data-level="3.1.4" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#scale-up-inputs"><i class="fa fa-check"></i><b>3.1.4</b> Scale Up Inputs</a></li>
-<li class="chapter" data-level="3.1.5" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#prep-for-other-platforms-and-sharing"><i class="fa fa-check"></i><b>3.1.5</b> Prep for Other Platforms and Sharing</a></li>
+<li class="chapter" data-level="3.2.1" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#start-from-a-template"><i class="fa fa-check"></i><b>3.2.1</b> Start from a template</a></li>
+<li class="chapter" data-level="3.2.2" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#chose-software-modules"><i class="fa fa-check"></i><b>3.2.2</b> Chose Software Modules</a></li>
+<li class="chapter" data-level="3.2.3" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#add-tasks"><i class="fa fa-check"></i><b>3.2.3</b> Add Tasks</a></li>
+<li class="chapter" data-level="3.2.4" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#scale-up-inputs"><i class="fa fa-check"></i><b>3.2.4</b> Scale Up Inputs</a></li>
+<li class="chapter" data-level="3.2.5" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#prep-for-other-platforms-and-sharing"><i class="fa fa-check"></i><b>3.2.5</b> Prep for Other Platforms and Sharing</a></li>
+<li class="chapter" data-level="3.2.6" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#testing-input-availability"><i class="fa fa-check"></i><b>3.2.6</b> Testing Input Availability</a></li>
+<li class="chapter" data-level="3.2.7" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#scaling-up-moving-to-the-cloud"><i class="fa fa-check"></i><b>3.2.7</b> Scaling Up, Moving to the Cloud</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#approaches-to-testing"><i class="fa fa-check"></i><b>3.2</b> Approaches to Testing</a></li>
-<li class="chapter" data-level="3.3" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html#scaling-up-moving-to-the-cloud"><i class="fa fa-check"></i><b>3.3</b> Scaling Up, Moving to the Cloud</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="chapter" data-level="4" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>4</b> References</a></li>
@@ -254,7 +141,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="header">
 <h1 class="title">WDL102: Designing WDL Workflows</h1>
-<p class="date"><em>November 08, 2022</em></p>
+<p class="date"><em>December 27, 2022</em></p>
 </div>
 <div id="about-this-guide" class="section level1 unnumbered">
 <h1>About this Guide</h1>
