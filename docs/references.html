@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 References | WDL102: Designing WDL Workflows</title>
+  <title>Chapter 4 References | Cromwell Workflow Manager and WDL Workflows</title>
   <meta name="description" content="A getting started guide to creating and testing WDL workflows" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 4 References | WDL102: Designing WDL Workflows" />
+  <meta property="og:title" content="Chapter 4 References | Cromwell Workflow Manager and WDL Workflows" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 References | WDL102: Designing WDL Workflows" />
+  <meta name="twitter:title" content="Chapter 4 References | Cromwell Workflow Manager and WDL Workflows" />
   
   <meta name="twitter:description" content="A getting started guide to creating and testing WDL workflows" />
   
@@ -75,20 +75,34 @@
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Guide</a></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#tools-to-edit-wdl"><i class="fa fa-check"></i><b>1.1</b> Tools to Edit WDL</a></li>
-<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#customizing-workflow-runs"><i class="fa fa-check"></i><b>1.2</b> Customizing Workflow Runs</a>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#what-is-wdl"><i class="fa fa-check"></i><b>1.1</b> What is WDL?</a>
 <ul>
-<li class="chapter" data-level="1.2.1" data-path="introduction.html"><a href="introduction.html#workflow-options"><i class="fa fa-check"></i><b>1.2.1</b> Workflow Options</a></li>
-<li class="chapter" data-level="1.2.2" data-path="introduction.html"><a href="introduction.html#runtime-defaults"><i class="fa fa-check"></i><b>1.2.2</b> Runtime Defaults</a></li>
-<li class="chapter" data-level="1.2.3" data-path="introduction.html"><a href="introduction.html#call-caching"><i class="fa fa-check"></i><b>1.2.3</b> Call Caching</a></li>
-<li class="chapter" data-level="1.2.4" data-path="introduction.html"><a href="introduction.html#workflow-failure-mode"><i class="fa fa-check"></i><b>1.2.4</b> Workflow Failure Mode</a></li>
-<li class="chapter" data-level="1.2.5" data-path="introduction.html"><a href="introduction.html#copying-outputs"><i class="fa fa-check"></i><b>1.2.5</b> Copying outputs</a></li>
+<li class="chapter" data-level="1.1.1" data-path="introduction.html"><a href="introduction.html#openwdl"><i class="fa fa-check"></i><b>1.1.1</b> OpenWDL</a></li>
+<li class="chapter" data-level="1.1.2" data-path="introduction.html"><a href="introduction.html#documentation-about-the-wdl-spec"><i class="fa fa-check"></i><b>1.1.2</b> Documentation about the WDL Spec</a></li>
+<li class="chapter" data-level="1.1.3" data-path="introduction.html"><a href="introduction.html#tools-to-edit-wdl"><i class="fa fa-check"></i><b>1.1.3</b> Tools to Edit WDL</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#what-is-a-wdl-engine"><i class="fa fa-check"></i><b>1.2</b> What Is a WDL Engine?</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#why-use-wdl-for-my-research"><i class="fa fa-check"></i><b>1.3</b> Why use WDL for my research?</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="introduction.html"><a href="introduction.html#abstracting-storage-and-computing-details"><i class="fa fa-check"></i><b>1.3.1</b> Abstracting Storage and Computing Details</a></li>
+<li class="chapter" data-level="1.3.2" data-path="introduction.html"><a href="introduction.html#reproducibility-and-portability"><i class="fa fa-check"></i><b>1.3.2</b> Reproducibility and Portability</a></li>
+<li class="chapter" data-level="1.3.3" data-path="introduction.html"><a href="introduction.html#software-and-environments"><i class="fa fa-check"></i><b>1.3.3</b> Software and Environments</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="what-is-wdl.html"><a href="what-is-wdl.html"><i class="fa fa-check"></i><b>2</b> What is WDL?</a>
+<li class="chapter" data-level="2" data-path="designing-wdls.html"><a href="designing-wdls.html"><i class="fa fa-check"></i><b>2</b> Designing WDLs</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="what-is-wdl.html"><a href="what-is-wdl.html#openwdl"><i class="fa fa-check"></i><b>2.1</b> OpenWDL</a></li>
-<li class="chapter" data-level="2.2" data-path="what-is-wdl.html"><a href="what-is-wdl.html#documentation-about-the-wdl-spec"><i class="fa fa-check"></i><b>2.2</b> Documentation about the WDL Spec</a></li>
+<li class="chapter" data-level="2.1" data-path="designing-wdls.html"><a href="designing-wdls.html#writing-workflows"><i class="fa fa-check"></i><b>2.1</b> Writing Workflows</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="designing-wdls.html"><a href="designing-wdls.html#design-recommendations"><i class="fa fa-check"></i><b>2.1.1</b> Design Recommendations</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="designing-wdls.html"><a href="designing-wdls.html#customizing-workflow-runs"><i class="fa fa-check"></i><b>2.2</b> Customizing Workflow Runs</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="designing-wdls.html"><a href="designing-wdls.html#workflow-options"><i class="fa fa-check"></i><b>2.2.1</b> Workflow Options</a></li>
+<li class="chapter" data-level="2.2.2" data-path="designing-wdls.html"><a href="designing-wdls.html#runtime-defaults"><i class="fa fa-check"></i><b>2.2.2</b> Runtime Defaults</a></li>
+<li class="chapter" data-level="2.2.3" data-path="designing-wdls.html"><a href="designing-wdls.html#call-caching"><i class="fa fa-check"></i><b>2.2.3</b> Call Caching</a></li>
+<li class="chapter" data-level="2.2.4" data-path="designing-wdls.html"><a href="designing-wdls.html#workflow-failure-mode"><i class="fa fa-check"></i><b>2.2.4</b> Workflow Failure Mode</a></li>
+<li class="chapter" data-level="2.2.5" data-path="designing-wdls.html"><a href="designing-wdls.html#copying-outputs"><i class="fa fa-check"></i><b>2.2.5</b> Copying outputs</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="developing-testing-and-scaling-workflows.html"><a href="developing-testing-and-scaling-workflows.html"><i class="fa fa-check"></i><b>3</b> Developing, Testing and Scaling Workflows</a>
 <ul>
@@ -119,7 +133,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">WDL102: Designing WDL Workflows</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Cromwell Workflow Manager and WDL Workflows</a>
           </h1>
         </div>
 
