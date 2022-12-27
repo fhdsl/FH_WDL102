@@ -4,14 +4,66 @@
 # Introduction
 This course is an introduction to designing and testing WDL workflows for beginner and intermediate users who primarily develop and run their own workflows for their own research work.  
 
-It will cover:
-- Tools to support editing WDLs
-- WDL syntax
-- Approaches to testing WDLs
-- Guidance for scaling up your computing including shifting to the cloud
-
-
 
 ## Tools to Edit WDL
 
 VSCode (https://code.visualstudio.com/) has multiple extensions for WDL, including "WDL DevTools" and  "WDL Syntax Highlighter". 
+
+
+## Customizing Workflow Runs
+
+### Workflow Options
+
+You can find additional [documentation on the Workflow Options json file](https://cromwell.readthedocs.io/en/stable/wf_options/Overview/) that can be used to customize how Cromwell runs your workflow.  We'll highlight some specific features that are often useful for many users.  
+
+### Runtime Defaults
+
+```
+{
+    "default_runtime_attributes": {
+        "docker": "ubuntu:latest",
+        "continueOnReturnCode": [4, 8, 15, 16, 23, 42]
+    }
+}
+```
+
+### Call Caching
+
+
+
+```
+{
+    "write_to_cache": true,
+    "read_from_cache": true
+}
+```
+
+### Workflow Failure Mode 
+
+
+{
+    "workflow_failure_mode": "ContinueWhilePossible"
+}
+
+Values are: `ContinueWhilePossible` or `NoNewCalls`
+
+
+### Copying outputs
+
+Read more details [here](https://cromwell.readthedocs.io/en/stable/wf_options/Overview/#output-copying), but the ability to copy the workflow outputs to another location can be very useful for data management.  
+
+```
+{
+    "final_workflow_outputs_dir": "/my/path/workflow/archive",
+    "use_relative_output_paths": false
+}
+```
+
+If you want to collapse the directory structure, you can set `use_relative_output_paths` to `true` but if a file collision occurs Cromwell will stop and report the workflow as failed. 
+
+
+
+
+
+
+
