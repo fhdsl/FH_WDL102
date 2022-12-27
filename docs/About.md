@@ -86,9 +86,7 @@ These credits are based on our [course contributors table guidelines](https://ww
 <!-- Author information -->
 
 [FirstName LastName]: link to personal website
-[John Muschelli]: https://johnmuschelli.com/
-[Candace Savonen]: https://www.cansavvy.com/
-[Carrie Wright]: https://carriewright11.github.io/
+
 
 <!-- Links -->
 

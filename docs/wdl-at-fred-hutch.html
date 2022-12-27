@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Cromwell Workflow Manager and WDL Workflows</title>
+  <title>Chapter 4 WDL at Fred Hutch | Cromwell Workflow Manager and WDL Workflows</title>
   <meta name="description" content="A getting started guide to creating and testing WDL workflows" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Cromwell Workflow Manager and WDL Workflows" />
+  <meta property="og:title" content="Chapter 4 WDL at Fred Hutch | Cromwell Workflow Manager and WDL Workflows" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Cromwell Workflow Manager and WDL Workflows" />
+  <meta name="twitter:title" content="Chapter 4 WDL at Fred Hutch | Cromwell Workflow Manager and WDL Workflows" />
   
   <meta name="twitter:description" content="A getting started guide to creating and testing WDL workflows" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-
-<link rel="next" href="introduction.html"/>
+<link rel="prev" href="developing-testing-and-scaling-workflows.html"/>
+<link rel="next" href="about-the-authors.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -154,14 +154,13 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="header">
-<h1 class="title">Cromwell Workflow Manager and WDL Workflows</h1>
-<p class="date"><em>December 27, 2022</em></p>
-</div>
-<div id="about-this-guide" class="section level1 unnumbered">
-<h1>About this Guide</h1>
-<p>This guide is intended to be a tool for getting started with designing your own WDL workflows.</p>
-<p><img src="assets/course-logo/wdl-102-navy.png" title="WDL logo" alt="course logo" style="display: block; margin: auto;" width="300" height="184"/></p>
+<div id="wdl-at-fred-hutch" class="section level1" number="4">
+<h1><span class="header-section-number">Chapter 4</span> WDL at Fred Hutch</h1>
+<p>Fred Hutch has begun supporting use of WDL workflows on their local SLURM cluster to support reproducible workflow development and testing locally while facilitating collaboration and cloud computing when needed. They have added some basic information about using <a href="https://sciwiki.fredhutch.org/compdemos/Cromwell/">WDL workflows and Cromwell</a> in their documentation site.</p>
+<p>If you’re looking for Cromwell configuration information for a SLURM cluster (including wiring to convert Docker containers to Singularity prior to running jobs), you can find the <a href="https://github.com/FredHutch/diy-cromwell-server">diy-cromwell-server repo</a> with instructions. We also have <a href="https://github.com/FredHutch/wdl-test-workflows">a repo containing some very basic WDL workflows</a> meant primarily to test Cromwell servers and for new users to begin to learn how WDL workflows can be structured.</p>
+<p>The Fred Hutch Data Science Lab has developed an <a href="https://hutchdatascience.org/FH_WDL101_Cromwell/">introductory guide</a> for Fred Hutch staff to get set up to use Cromwell as it is configured in the above repo, though the content may be useful for others intending to do something similar at their institution.</p>
+<p>This Cromwell configuration is made simpler for use by staff via the <a href="https://github.com/FredHutch/fh.wdlR">fh.wdlR</a> R package, a convenience package that wraps the Cromwell API calls and does some basic parsing of the metadata suitable for basic workflows. Also, there is a Shiny app <a href="https://github.com/FredHutch/shiny-cromwell">here</a> that leverages <code>fh.wdlR</code> and can be run on your local machine if desired to serve as a useful interface with your Cromwell server.</p>
+<p>On all these resources, we welcome your input on the various GitHub repo’s that drive them all.</p>
 
 </div>
 <hr>
@@ -177,8 +176,8 @@
           </div>
         </div>
       </div>
-
-<a href="introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="developing-testing-and-scaling-workflows.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="about-the-authors.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
