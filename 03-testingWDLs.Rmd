@@ -5,8 +5,24 @@ ottrpal::set_knitr_image_path()
 # Developing, Testing and Scaling Workflows
 
 
-## Developing a New Workflow
+## Creating an Inputs template
 
+There is a tool that is installed along with Cromwell called "womtool".  This tool is what does workflow validation through the Shiny app and fh.wdlR package.  However, it has additional features that are not available unless you run it directly.    
+
+There is [specific documentation from the Broad about womtool](https://cromwell.readthedocs.io/en/stable/WOMtool/) that can give you more information about the parameters and features of this small tool.  
+
+The most useful aspect to womtool is the ability to give it a new workflow you have written and have it give you a template input.json file for you to customize for use.   To use it, log into Rhino and do the following:
+
+```
+module load cromwell/84
+java -jar $EBROOTCROMWELL/womtool.jar inputs myNewWorkflow.wdl > input_template.json
+```
+
+Now your template input information will be saved in the file `input_template.json1`.  
+
+
+
+## Approaches to Testing and Development
 
 ### Start from a template
 Preferably one that executes cleanly - even if it's Hello World.
@@ -24,12 +40,6 @@ Start to run workflow on full size data (scatters of 1), then start to scatter o
 
 ### Prep for Other Platforms and Sharing
 Shift to docker containers instead of modules, ensure that all inputs are specified as files not directories!!, start to optimize compute resources required for tasks (how much memory does it really need, or is it going to need many CPU's).
-
-
-
-
-
-## Approaches to Testing
 - start small - start with truncated/downsampled data in the same formats but smaller!
 - add tasks one at a time and leverage call caching to test single additions quickly
 - start testing scatters with a scatter of one!
@@ -45,7 +55,7 @@ Then you have two options:
 - my inputs are small or local: just remove the input localizing task before re-running the workflow
 - my inputs are large or expensive to localize: specify the inputs to your workflow tasks as the outputs of this input localizing task by adding them as outputs.  
 
-## Scaling Up, Moving to the Cloud
+### Scaling Up, Moving to the Cloud
 - Test with a scatter of many small files (not full size!)
 - Begin optimizing computing resources for each task
 - Dockerize single task environments
