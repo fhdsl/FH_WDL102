@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>About the Authors | Cromwell Workflow Manager and WDL Workflows</title>
+  <title>Chapter 2 Designing WDLs | Cromwell Workflow Manager and WDL Workflows</title>
   <meta name="description" content="A getting started guide to creating and testing WDL workflows" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="About the Authors | Cromwell Workflow Manager and WDL Workflows" />
+  <meta property="og:title" content="Chapter 2 Designing WDLs | Cromwell Workflow Manager and WDL Workflows" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="About the Authors | Cromwell Workflow Manager and WDL Workflows" />
+  <meta name="twitter:title" content="Chapter 2 Designing WDLs | Cromwell Workflow Manager and WDL Workflows" />
   
   <meta name="twitter:description" content="A getting started guide to creating and testing WDL workflows" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="developing-testing-and-scaling-workflows.html"/>
-<link rel="next" href="references.html"/>
+<link rel="prev" href="introduction.html"/>
+<link rel="next" href="developing-testing-and-scaling-workflows.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -153,144 +153,156 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="about-the-authors" class="section level1 unnumbered">
-<h1>About the Authors</h1>
-<p>These credits are based on our <a href="https://www.ottrproject.org/more_features.html#giving-credits-to-contributors">course contributors table guidelines</a>.</p>
-<p> 
- </p>
-<table>
-<colgroup>
-<col width="58%" />
-<col width="41%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Credits</th>
-<th>Names</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Pedagogy</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Lead Content Instructor(s)</td>
-<td>Amy Paguirigan</td>
-</tr>
-<tr class="odd">
-<td>Content Author(s) (include chapter name/link in parentheses if only for specific chapters) - make new line if more than one chapter involved</td>
-<td>If any other authors besides lead instructor</td>
-</tr>
-<tr class="even">
-<td>Content Contributor(s) (include section name/link in parentheses) - make new line if more than one section involved</td>
-<td>Wrote less than a chapter</td>
-</tr>
-<tr class="odd">
-<td>Content Editor(s)/Reviewer(s)</td>
-<td>Checked your content</td>
-</tr>
-<tr class="even">
-<td>Content Director(s)</td>
-<td>Helped guide the content direction</td>
-</tr>
-<tr class="odd">
-<td>Content Consultants (include chapter name/link in parentheses or word “General”) - make new line if more than one chapter involved</td>
-<td>Gave high level advice on content</td>
-</tr>
-<tr class="even">
-<td>Acknowledgments</td>
-<td>Gave small assistance to content but not to the level of consulting</td>
-</tr>
-<tr class="odd">
-<td><strong>Technical</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Template Publishing Engineers</td>
-<td><a href="https://www.cansavvy.com/">Candace Savonen</a>, <a href="https://carriewright11.github.io/">Carrie Wright</a></td>
-</tr>
-<tr class="odd">
-<td>Publishing Maintenance Engineer</td>
-<td><a href="https://www.cansavvy.com/">Candace Savonen</a></td>
-</tr>
-<tr class="even">
-<td>Technical Publishing Stylists</td>
-<td><a href="https://carriewright11.github.io/">Carrie Wright</a>, <a href="https://www.cansavvy.com/">Candace Savonen</a></td>
-</tr>
-<tr class="odd">
-<td>Package Developers (<a href="https://github.com/jhudsl/ottrpal">ottrpal</a>) <a href="https://www.cansavvy.com/">Candace Savonen</a>, <a href="https://johnmuschelli.com/">John Muschelli</a>, <a href="https://carriewright11.github.io/">Carrie Wright</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p> </p>
-<pre><code>## ─ Session info ───────────────────────────────────────────────────────────────
-##  setting  value                       
-##  version  R version 4.0.2 (2020-06-22)
-##  os       Ubuntu 20.04.3 LTS          
-##  system   x86_64, linux-gnu           
-##  ui       X11                         
-##  language (EN)                        
-##  collate  en_US.UTF-8                 
-##  ctype    en_US.UTF-8                 
-##  tz       Etc/UTC                     
-##  date     2022-12-27                  
-## 
-## ─ Packages ───────────────────────────────────────────────────────────────────
-##  package     * version    date       lib source                            
-##  assertthat    0.2.1      2019-03-21 [1] RSPM (R 4.0.3)                    
-##  bookdown      0.24       2022-02-15 [1] Github (rstudio/bookdown@88bc4ea) 
-##  callr         3.4.4      2020-09-07 [1] RSPM (R 4.0.2)                    
-##  cli           2.0.2      2020-02-28 [1] RSPM (R 4.0.0)                    
-##  crayon        1.3.4      2017-09-16 [1] RSPM (R 4.0.0)                    
-##  desc          1.2.0      2018-05-01 [1] RSPM (R 4.0.3)                    
-##  devtools      2.3.2      2020-09-18 [1] RSPM (R 4.0.3)                    
-##  digest        0.6.25     2020-02-23 [1] RSPM (R 4.0.0)                    
-##  ellipsis      0.3.1      2020-05-15 [1] RSPM (R 4.0.3)                    
-##  evaluate      0.14       2019-05-28 [1] RSPM (R 4.0.3)                    
-##  fansi         0.4.1      2020-01-08 [1] RSPM (R 4.0.0)                    
-##  fs            1.5.0      2020-07-31 [1] RSPM (R 4.0.3)                    
-##  glue          1.6.1      2022-01-22 [1] CRAN (R 4.0.2)                    
-##  htmltools     0.5.0      2020-06-16 [1] RSPM (R 4.0.1)                    
-##  jquerylib     0.1.4      2021-04-26 [1] CRAN (R 4.0.2)                    
-##  knitr         1.33       2022-02-15 [1] Github (yihui/knitr@a1052d1)      
-##  lifecycle     1.0.0      2021-02-15 [1] CRAN (R 4.0.2)                    
-##  magrittr      2.0.2      2022-01-26 [1] CRAN (R 4.0.2)                    
-##  memoise       1.1.0      2017-04-21 [1] RSPM (R 4.0.0)                    
-##  pkgbuild      1.1.0      2020-07-13 [1] RSPM (R 4.0.2)                    
-##  pkgload       1.1.0      2020-05-29 [1] RSPM (R 4.0.3)                    
-##  prettyunits   1.1.1      2020-01-24 [1] RSPM (R 4.0.3)                    
-##  processx      3.4.4      2020-09-03 [1] RSPM (R 4.0.2)                    
-##  ps            1.3.4      2020-08-11 [1] RSPM (R 4.0.2)                    
-##  purrr         0.3.4      2020-04-17 [1] RSPM (R 4.0.3)                    
-##  R6            2.4.1      2019-11-12 [1] RSPM (R 4.0.0)                    
-##  remotes       2.2.0      2020-07-21 [1] RSPM (R 4.0.3)                    
-##  rlang         0.4.10     2022-02-15 [1] Github (r-lib/rlang@f0c9be5)      
-##  rmarkdown     2.10       2022-02-15 [1] Github (rstudio/rmarkdown@02d3c25)
-##  rprojroot     2.0.2      2020-11-15 [1] CRAN (R 4.0.2)                    
-##  sessioninfo   1.1.1      2018-11-05 [1] RSPM (R 4.0.3)                    
-##  stringi       1.5.3      2020-09-09 [1] RSPM (R 4.0.3)                    
-##  stringr       1.4.0      2019-02-10 [1] RSPM (R 4.0.3)                    
-##  testthat      3.0.1      2022-02-15 [1] Github (R-lib/testthat@e99155a)   
-##  usethis       2.1.5.9000 2022-02-15 [1] Github (r-lib/usethis@57b109a)    
-##  withr         2.3.0      2020-09-22 [1] RSPM (R 4.0.2)                    
-##  xfun          0.26       2022-02-15 [1] Github (yihui/xfun@74c2a66)       
-##  yaml          2.2.1      2020-02-01 [1] RSPM (R 4.0.3)                    
-## 
-## [1] /usr/local/lib/R/site-library
-## [2] /usr/local/lib/R/library</code></pre>
-<!-- Author information -->
-<!-- Links -->
-<!-- Fill out this table using these instructions: https://github.com/jhudsl/OTTR_Template/wiki/How-to-give-credits
+<div id="designing-wdls" class="section level1" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Designing WDLs</h1>
+<p>The “Getting Started with WDL” and “WDL Script Components” sections of <a href="https://wdl-docs.readthedocs.io/en/stable/">the OpenWDL docs site</a> provides a useful background into the essential parts of WDL you’ll need to learn to start designing your own WDLs.</p>
+<p>A very useful way to begin learning how to write a WDL is actually to take a WDL that you know “works” in that it has the required formatting and structure to be executed by a WDL engine, and edit it. We have created a repository with <a href="https://github.com/FredHutch/wdl-test-workflows">test workflows</a> in it that can serve as a basis to get started.</p>
+<div id="writing-workflows" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Writing Workflows</h2>
+<p>WDL is intended to be a relatively easy to read workflow language. There are other workflow languages and workflow managers that run them, but WDL was/is primarily intended to be shared and interpreted by others that may or may not have experience with any given domain-specific language (like Nextflow). Writing workflows in WDL, therefore, has a fairly low barrier to entry for those of us new to writing workflows.</p>
+<p>The basics of this workflow language includes a similar pattern where you specify workflow inputs, the order of tasks and how they pass data between them, and which files are the outputs of the workflow itself. Here is an example of a single-task workflow that takes some inputs, runs <code>bwa mem</code>, then outputs the resulting bam file and it’s index.</p>
+<pre><code>version 1.0
+workflow myWorkflowName {
+  input {
+    String sample_name = &quot;sample1&quot;
+    File myfastq = &quot;/path/to/myfastq.fastq.gz&quot;
+  }
 
-For JHU courses, You will need to add Ira as a credit:
+  call BwaMem {
+    input:
+      input_fastq = myfastq,
+      base_file_name = sample_name,
+      ref_fasta = &quot;hg19.fasta.fa&quot;
+      ref_fasta_index = &quot;hg19.fasta.fa&quot;,
+      ref_dict = &quot;hg19.fasta.dict&quot;,
+      ref_alt = &quot;hg19.fasta.alt&quot;,
+      ref_amb = &quot;hg19.fasta.amb&quot;,
+      ref_ann = &quot;hg19.fasta.ann&quot;,
+      ref_bwt = &quot;hg19.fasta.bwt&quot;,
+      ref_pac = &quot;hg19.fasta.pac&quot;,
+      ref_sa = &quot;hg19.fasta.sa&quot;
+  }
 
-|Content Publisher|[Ira Gooding]|
-...
-[Ira Gooding]: https://publichealth.jhu.edu/faculty/4130/ira-gooding
--->
+  output {
+    File output_bam = BwaMem.output_bam
+    File output_bai = BwaMem.output_bai
+  }
+}</code></pre>
+<p>Tasks are constructed in the same WDL file by naming them and providing similar information. Here’s an example of a task that runs <code>bwa mem</code> on an interleaved fastq file using a Fred Hutch docker container. Notice there are sections for the relevant portions of the task, such as <code>input</code> (what files or variables are needed), <code>command</code> (or what it should run), <code>output</code> (which of the generated files is considered the output of the task), and <code>runtime</code> (such as what HPC resources and software should be used for this task).</p>
+<pre><code>task BwaMem {
+  input {
+    File input_fastq
+    String base_file_name
+    File ref_fasta
+    File ref_fasta_index
+    File ref_dict
+    File ref_alt
+    File ref_amb
+    File ref_ann
+    File ref_bwt
+    File ref_pac
+    File ref_sa
+  }
+  command {
 
+    bwa mem \
+      -p -v 3 -t 16 -M \
+      ${ref_fasta} ${input_fastq} &gt; ${base_file_name}.sam 
+    samtools view -1bS -@ 15 -o ${base_file_name}.aligned.bam ${base_file_name}.sam
+  }
+  output {
+    File output_bam = &quot;${base_file_name}.aligned.bam&quot;
+    File output_bai = &quot;${base_file_name}.aligned.bam.bai&quot;
+  }
+  runtime {
+    memory: &quot;32 GB&quot;
+    cpu: 16
+    docker: &quot;fredhutch/bwa:0.7.17&quot;
+  }
+}</code></pre>
+<p>You can find more about constructing the rest of your workflow at the OpenWDL docs site, and in future content here.</p>
+<div id="design-recommendations" class="section level3" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Design Recommendations</h3>
+<p>In order to improve shareability and also leverage the <code>fh.wdlR</code> package, we recommend you structure your WDL based workflows with the following input files:</p>
+<ol style="list-style-type: decimal">
+<li>Workflow Description file</li>
+</ol>
+<ul>
+<li>in WDL, a list of tools to be run in a sequence, likely several, otherwise using a workflow manager is not the right approach.<br />
+</li>
+<li>This file describes the process that is desired to occur every time the workflow is run.</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Parameters file</li>
+</ol>
+<ul>
+<li>in json, a workflow-specific list of inputs and parameters that are intended to be set for every group of workflow executions.</li>
+<li>Examples of what this input may include would be which genome to map to, reference data files to use, what environment modules to use, etc.</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>Batch file:<br />
+</li>
+</ol>
+<ul>
+<li>This file is a list of data locations and any other sample/job-specific information the workflow needs. Ideally this would be relatively minimal so that the consistency of the analysis between input data sets are as similar as possible to leverage the strengths of a reproducible workflow. This file would be different for each batch or run of a workflow.<br />
+</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>Workflow options (OPTIONAL)</li>
+</ol>
+<ul>
+<li>A json that contains information about how the workflow should be run (described below).</li>
+</ul>
+</div>
+</div>
+<div id="customizing-workflow-runs" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Customizing Workflow Runs</h2>
+<p>You can tailor how a workflow might be run by various backends (computing infrastructure like a SLURM cluster or a cloud based compute provider), or with customized defaults.</p>
+<div id="workflow-options" class="section level3" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> Workflow Options</h3>
+<p>You can find additional <a href="https://cromwell.readthedocs.io/en/stable/wf_options/Overview/">documentation on the Workflow Options json file</a> that can be used to customize how Cromwell runs your workflow. We’ll highlight some specific features that are often useful for many users.</p>
+<p>Workflow options can be applied to any workflow to tune how the individual instance of the workflow should behave. There are more options than these that can be found in the Cromwell docs site, but of most interest are the following parameters:</p>
+<ul>
+<li><code>workflow_failure_mode</code>: <code>NoNewCalls</code> indicates that if one task fails, no new calls will be sent and all existing calls will be allowed to finish. <code>ContinueWhilePossible</code> indicates that even if one task fails, all other task series should be continued until all possible jobs are completed either successfully or not.</li>
+<li><code>default_runtime_attributes.maxRetries</code>: The maximum number of times a job can be retried if it fails in a way that is considered a retryable failure (like if a job gets dumped or the server goes down).</li>
+<li><code>write_to_cache</code>: Do you want to write metadata about this workflow to the database to allow for future use of the cached files it might create?</li>
+<li><code>read_from_cache</code>: Do you want to query the database to determine if portions of this workflow have already completed successfully, thus they do not need to be re-computed.</li>
+</ul>
+</div>
+<div id="runtime-defaults" class="section level3" number="2.2.2">
+<h3><span class="header-section-number">2.2.2</span> Runtime Defaults</h3>
+<pre><code>{
+    &quot;default_runtime_attributes&quot;: {
+        &quot;docker&quot;: &quot;ubuntu:latest&quot;,
+        &quot;continueOnReturnCode&quot;: [4, 8, 15, 16, 23, 42]
+    }
+}</code></pre>
+</div>
+<div id="call-caching" class="section level3" number="2.2.3">
+<h3><span class="header-section-number">2.2.3</span> Call Caching</h3>
+<pre><code>{
+    &quot;write_to_cache&quot;: true,
+    &quot;read_from_cache&quot;: true
+}</code></pre>
+</div>
+<div id="workflow-failure-mode" class="section level3" number="2.2.4">
+<h3><span class="header-section-number">2.2.4</span> Workflow Failure Mode</h3>
+<pre><code>{
+    &quot;workflow_failure_mode&quot;: &quot;ContinueWhilePossible&quot;
+}</code></pre>
+<p>Values are: <code>ContinueWhilePossible</code> or <code>NoNewCalls</code></p>
+</div>
+<div id="copying-outputs" class="section level3" number="2.2.5">
+<h3><span class="header-section-number">2.2.5</span> Copying outputs</h3>
+<p>Read more details <a href="https://cromwell.readthedocs.io/en/stable/wf_options/Overview/#output-copying">here</a>, but the ability to copy the workflow outputs to another location can be very useful for data management.</p>
+<pre><code>{
+    &quot;final_workflow_outputs_dir&quot;: &quot;/my/path/workflow/archive&quot;,
+    &quot;use_relative_output_paths&quot;: false
+}</code></pre>
+<p>If you want to collapse the directory structure, you can set <code>use_relative_output_paths</code> to <code>true</code> but if a file collision occurs Cromwell will stop and report the workflow as failed.</p>
+
+</div>
+</div>
 </div>
 <hr>
 <center> 
@@ -305,8 +317,8 @@ For JHU courses, You will need to add Ira as a credit:
           </div>
         </div>
       </div>
-<a href="developing-testing-and-scaling-workflows.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="developing-testing-and-scaling-workflows.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
