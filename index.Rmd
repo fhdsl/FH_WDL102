@@ -6,7 +6,7 @@ documentclass: book
 bibliography: book.bib
 biblio-style: apalike
 link-citations: yes
-description: A getting started guide to desiging and testing WDL workflows
+description: A getting started guide to designing and testing WDL workflows
 favicon: assets/favicon.ico
 ---
 
